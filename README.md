@@ -4,12 +4,11 @@ BWMirror API allows you to treat native BWAPI C/C++ objects as if they were Java
 This project contains the API and documentation for BWMirror. If you're interested in coding your own bot for Starcraft Broodwar, you've come to the right place.
 
 ##Important differences between BWMirror v1 and BWMirror v2
-- v1 uses BWAPI3, v3 uses BWAPI4
+- v1 uses BWAPI3, v2 uses BWAPI4
 - BWTA is not supported for v2, BWTA2 support is planned
 - UnitCommand class is now ported, you can use it's static members (attack, gather, ..) to abstract the command from a unit
 - PositionOrUnit class is also ported, you can use it to wrap either a Positions or a Unit object as some methods now take PositionOrUnit parameter.
 - Game.setTextSize now takes bwapi.Text.Size.Enum instead of int to reflect BWAPI4
-
 
 ##FAQ 
 **How do I start creating awesome bots?**
@@ -25,10 +24,12 @@ Tutorials for BWMirror v1
 
 Sure, visit http://www.sscaitournament.com/ and register you bot 
 
+**Where's the javadoc?**
+http://vjurenka.github.io/BWMirror/javadoc/ , but v2 has only a few comments in javadoc, this will be fixed soon, for now use the the BWAPI documentation http://bwapi.github.io/ , or the v1 javadocs http://bwmirror.jurenka.sk/javadoc/ 
+
 **I'm confused, most of the methods have empty body.**
 
 Most of the methods are implemeted in BWAPI. BWMirror acts as a Java wrapper, the actual mapping takes place in BWMirror's .dll, which is machine genereted and it's source can be found under BWMirror-Generator project  https://github.com/vjurenka/BWMirror-Generator
-
 
 **My bot prints the message "BWMirror API supports only x86 architecture." and fails to load. What's the problem?**
 
