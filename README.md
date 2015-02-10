@@ -9,9 +9,9 @@ Example bots and other samples will be added later.
 
 ##Important differences between BWMirror v1 and BWMirror v2
 - v1 uses BWAPI3, v2 uses BWAPI4
-- BWTA is not supported for v2, BWTA2 support is planned
-- UnitCommand class is now ported, you can use it's static members (attack, gather, ..) to abstract the command from a unit
-- PositionOrUnit class is also ported, you can use it to wrap either a Positions or a Unit object as some methods now take PositionOrUnit parameter.
+- BWTA is not supported for v2, BWTA2 support is planned and be added soon
+- UnitCommand class is now ported, you can use its static members (attack, gather, ..) to abstract the command from a unit
+- PositionOrUnit class is also ported, it's used to wrap either a Positions or a Unit object as some methods now take PositionOrUnit parameter.
 - Game.setTextSize now takes bwapi.Text.Size.Enum instead of int to reflect BWAPI4
 
 ##FAQ 
@@ -38,7 +38,7 @@ Most of the methods are implemeted in BWAPI. BWMirror acts as a Java wrapper, th
 
 **My bot prints the message "BWMirror API supports only x86 architecture." and fails to load. What's the problem?**
 
-Install a 32-bit version of JRE and point your IDE to it. You can find the current 32-bit versions at https://www.java.com/en/download/manual.jsp .
+Install a 32-bit version of JRE and point your IDE to it. You can find the current 32-bit versions at https://www.java.com/en/download/manual.jsp 
 
 Note: While it's possible to build x64 version of BWMirror API, it fails to cooperate with StarCraft at runtime, as StarCraft is an x86 application. Therefore we only provide the x86 version.
 
