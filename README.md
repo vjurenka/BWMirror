@@ -1,13 +1,25 @@
-#BWMirror API
+﻿#BWMirror API
 BWMirror API allows you to treat native BWAPI C/C++ objects as if they were Java objects. Current supported version is BWAPI4 which is located at https://github.com/bwapi/bwapi. 
 
-This project contains the API and documentation for BWMirror. If you're interested in coding your own bot for starcraft Broodwar, you've come to the right place.
+This project contains the API and documentation for BWMirror. If you're interested in coding your own bot for Starcraft Broodwar, you've come to the right place.
+
+##Important differences between BWMirror v1 and BWMirror v2
+- v1 uses BWAPI3, v3 uses BWAPI4
+- BWTA is not supported for v2, BWTA2 support is planned
+- UnitCommand class is now ported, you can use it's static members (attack, gather, ..) to abstract the command from a unit
+- PositionOrUnit class is also ported, you can use it to wrap either a Positions or a Unit object as some methods now take PositionOrUnit parameter.
+- Game.setTextSize now takes bwapi.Text.Size.Enum instead of int to reflect BWAPI4
+
 
 ##FAQ 
 **How do I start creating awesome bots?**
 
-Rafał Poniatowski has created an exceptional document if you're new to the world of SC:Broowar bots
+Rafał Poniatowski has created an exceptional document if you're new to the world of SC:Broowar bots.
 You can find it here: https://docs.google.com/document/d/1nJnA0_golT4T9u6bffQWybrZbZnClu-WkGfLLaBzvTk/edit
+
+Tutorials for BWMirror v1 
+- http://bwmirror.jurenka.sk
+- http://www.sscaitournament.com/index.php?action=tutorial
 
 **Can I fight against other bots?**
 
@@ -31,6 +43,8 @@ You can do it either here or in the generator project. Please don't create merge
 **Where can I report issues?**
 
 You can do it either here or in the generator project. If your bot crashed with JVM exception please include the .log file which was created.
+
+
 
 
 
