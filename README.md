@@ -25,6 +25,7 @@ Tutorials for BWMirror v1
 Sure, visit http://www.sscaitournament.com/ and register you bot 
 
 **Where's the javadoc?**
+
 http://vjurenka.github.io/BWMirror/javadoc/ , but v2 has only a few comments in javadoc, this will be fixed soon, for now use the the BWAPI documentation http://bwapi.github.io/ , or the v1 javadocs http://bwmirror.jurenka.sk/javadoc/ 
 
 **I'm confused, most of the methods have empty body.**
