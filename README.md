@@ -1,7 +1,11 @@
 ﻿#BWMirror API
-BWMirror API allows you to treat native BWAPI C/C++ objects as if they were Java objects. Current supported version is BWAPI4 which is located at https://github.com/bwapi/bwapi. 
+BWMirror API allows you to treat native BWAPI C/C++ objects as if they were Java objects. Current supported version is BWAPI4 which is located at https://github.com/bwapi/bwapi . 
 
 This project contains the API and documentation for BWMirror. If you're interested in coding your own bot for Starcraft Broodwar, you've come to the right place.
+**All you need to do download is the current version .jar file, which is in the dist folder.** 
+
+Example bots and other samples will be added later.
+
 
 ##Important differences between BWMirror v1 and BWMirror v2
 - v1 uses BWAPI3, v2 uses BWAPI4
