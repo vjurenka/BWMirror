@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="BWMirror : BWMirror API source files">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>BWMirror</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/vjurenka/BWMirror">View on GitHub</a>
+
+          <h1 id="project_title">BWMirror</h1>
+          <h2 id="project_tagline">BWMirror API source files</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/vjurenka/BWMirror/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/vjurenka/BWMirror/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="bwmirror-api" class="anchor" href="#bwmirror-api" aria-hidden="true"><span class="octicon octicon-link"></span></a>BWMirror API</h1>
+
+<p>BWMirror API allows you to treat native BWAPI C/C++ objects as if they were Java objects. Current supported version is BWAPI4 which is located at <a href="https://github.com/bwapi/bwapi">https://github.com/bwapi/bwapi</a>. </p>
+
+<p>This project contains the API and documentation for BWMirror. If you're interested in coding your own bot for Starcraft Broodwar, you've come to the right place.</p>
+
+<h2>
+<a id="important-differences-between-bwmirror-v1-and-bwmirror-v2" class="anchor" href="#important-differences-between-bwmirror-v1-and-bwmirror-v2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Important differences between BWMirror v1 and BWMirror v2</h2>
+
+<ul>
+<li>v1 uses BWAPI3, v3 uses BWAPI4</li>
+<li>BWTA is not supported for v2, BWTA2 support is planned</li>
+<li>UnitCommand class is now ported, you can use it's static members (attack, gather, ..) to abstract the command from a unit</li>
+<li>PositionOrUnit class is also ported, you can use it to wrap either a Positions or a Unit object as some methods now take PositionOrUnit parameter.</li>
+<li>Game.setTextSize now takes bwapi.Text.Size.Enum instead of int to reflect BWAPI4</li>
+</ul>
+
+<h2>
+<a id="faq" class="anchor" href="#faq" aria-hidden="true"><span class="octicon octicon-link"></span></a>FAQ</h2>
+
+<p><strong>How do I start creating awesome bots?</strong></p>
+
+<p>Rafa³ Poniatowski has created an exceptional document if you're new to the world of SC:Broowar bots.
+You can find it here: <a href="https://docs.google.com/document/d/1nJnA0_golT4T9u6bffQWybrZbZnClu-WkGfLLaBzvTk/edit">https://docs.google.com/document/d/1nJnA0_golT4T9u6bffQWybrZbZnClu-WkGfLLaBzvTk/edit</a></p>
+
+<p>Tutorials for BWMirror v1 </p>
+
+<ul>
+<li><a href="http://bwmirror.jurenka.sk">http://bwmirror.jurenka.sk</a></li>
+<li><a href="http://www.sscaitournament.com/index.php?action=tutorial">http://www.sscaitournament.com/index.php?action=tutorial</a></li>
+</ul>
+
+<p><strong>Can I fight against other bots?</strong></p>
+
+<p>Sure, visit <a href="http://www.sscaitournament.com/">http://www.sscaitournament.com/</a> and register you bot </p>
+
+<p><strong>I'm confused, most of the methods have empty body.</strong></p>
+
+<p>Most of the methods are implemeted in BWAPI. BWMirror acts as a Java wrapper, the actual mapping takes place in BWMirror's .dll, which is machine genereted and it's source can be found under BWMirror-Generator project  <a href="https://github.com/vjurenka/BWMirror-Generator">https://github.com/vjurenka/BWMirror-Generator</a></p>
+
+<p><strong>My bot prints the message "BWMirror API supports only x86 architecture." and fails to load. What's the problem?</strong></p>
+
+<p>Install a 32-bit version of JRE and point your IDE to it. You can find the current 32-bit versions at <a href="https://www.java.com/en/download/manual.jsp">https://www.java.com/en/download/manual.jsp</a> .</p>
+
+<p>Note: While it's possible to build x64 version of BWMirror API, it fails to cooperate with StarCraft at runtime, as StarCraft is an x86 application. Therefore we only provide the x86 version.</p>
+
+<p><strong>Where can I suggest new functionality?</strong></p>
+
+<p>You can do it either here or in the generator project. Please don't create merge requests here as these sources are machine generated.</p>
+
+<p><strong>Where can I report issues?</strong></p>
+
+<p>You can do it either here or in the generator project. If your bot crashed with JVM exception please include the .log file which was created.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">BWMirror maintained by <a href="https://github.com/vjurenka">vjurenka</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
