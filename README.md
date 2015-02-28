@@ -9,7 +9,7 @@ Example bots and other samples will be added later.
 
 ##Important differences between BWMirror v1 and BWMirror v2
 - v1 uses BWAPI3, v2 uses BWAPI4
-- BWTA is not supported for v2, BWTA2 support is planned and be added soon
+- v1 uses BWTA, v2 uses BWTA2 ( https://bitbucket.org/auriarte/bwta2 )
 - UnitCommand class is now ported, you can use its static members (attack, gather, ..) to abstract the command from a unit
 - PositionOrUnit class is also ported, it's used to wrap either a Positions or a Unit object as some methods now take PositionOrUnit parameter.
 - Game.setTextSize now takes bwapi.Text.Size.Enum instead of int to reflect BWAPI4
