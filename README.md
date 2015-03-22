@@ -2,14 +2,15 @@
 BWMirror API allows you to treat native BWAPI C/C++ objects as if they were Java objects. Current supported version is BWAPI4 which is located at https://github.com/bwapi/bwapi . 
 
 This project contains the API and documentation for BWMirror. If you're interested in coding your own bot for Starcraft Broodwar, you've come to the right place.
-**All you need to do download is the current version .jar file, which is in the dist folder.** 
+**All you need to do download is the current version .jar file, which is in the dist folder**  ,
+the .dll will be auto extracted. The zip archive listed in releases also includes BWTA2 map data for SSCAI Tournament.
 
 Example bots and other samples will be added later.
 
 
 ##Important differences between BWMirror v1 and BWMirror v2
 - v1 uses BWAPI3, v2 uses BWAPI4
-- BWTA is not supported for v2, BWTA2 support is planned and be added soon
+- v1 uses BWTA, v2 uses BWTA2 ( https://bitbucket.org/auriarte/bwta2 )
 - UnitCommand class is now ported, you can use its static members (attack, gather, ..) to abstract the command from a unit
 - PositionOrUnit class is also ported, it's used to wrap either a Positions or a Unit object as some methods now take PositionOrUnit parameter.
 - Game.setTextSize now takes bwapi.Text.Size.Enum instead of int to reflect BWAPI4
@@ -50,13 +51,16 @@ You can do it either here or in the generator project. Please don't create merge
 
 You can do it either here or in the generator project. If your bot crashed with JVM exception please include the .log file which was created.
 
+**My bot freezes at startup when I enable BWTA.**
+
+The first time BWTA analyses a map, it can take a few minutes. The results are saved to bwapi-data/BWTA/ folder for later use. We have prepared BWTA data for some maps (the map pool from SSCAITournament).
+
 ##Changelog
 
 **v 2.1**
 - BWMirror now includes and auto extracts the .dlls required for BWTA2 to work. (This solves the misssing .dlls error)
 - Several new methods added to UnitType class: abilities(), upgrades(), whatBuilds(), requiredUnits()
 - Two new methods added to BWTA class: getNearestTilePosition(), getGroundDistances()
-
 
 
 
