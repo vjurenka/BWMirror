@@ -10,6 +10,7 @@ import bwapi.Position;
 import bwapi.TilePosition;
 import bwapi.Player;
 import bwapi.Unit;
+import bwapi.Pair;
 
 public class BWTA {
 
@@ -64,6 +65,10 @@ public class BWTA {
     public static native boolean isConnected(TilePosition a, TilePosition b);
 
     public static native double getGroundDistance(TilePosition start, TilePosition end);
+
+    public static native Pair<TilePosition, Double> getNearestTilePosition(TilePosition start, List<TilePosition> targets);
+
+    public static native Map<TilePosition, Double> getGroundDistances(TilePosition start, List<TilePosition> targets);
 
     public static native void buildChokeNodes();
 

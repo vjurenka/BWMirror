@@ -10,6 +10,7 @@ import bwapi.Position;
 import bwapi.TilePosition;
 import bwapi.Player;
 import bwapi.Unit;
+import bwapi.Pair;
 import bwapi.PositionedObject;
 
 public class BaseLocation extends PositionedObject 

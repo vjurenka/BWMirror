@@ -17,12 +17,28 @@ public class UnitType {
         return getRace_native(pointer);
     }
 
+    public Pair<UnitType, Integer> whatBuilds() {
+        return whatBuilds_native(pointer);
+    }
+
+    public Map<UnitType, Integer> requiredUnits() {
+        return requiredUnits_native(pointer);
+    }
+
     public TechType requiredTech() {
         return requiredTech_native(pointer);
     }
 
     public TechType cloakingTech() {
         return cloakingTech_native(pointer);
+    }
+
+    public List<TechType> abilities() {
+        return abilities_native(pointer);
+    }
+
+    public List<UpgradeType> upgrades() {
+        return upgrades_native(pointer);
     }
 
     public UpgradeType armorUpgrade() {
@@ -748,9 +764,17 @@ public class UnitType {
 
     private native Race getRace_native(long pointer);
 
+    private native Pair<UnitType, Integer> whatBuilds_native(long pointer);
+
+    private native Map<UnitType, Integer> requiredUnits_native(long pointer);
+
     private native TechType requiredTech_native(long pointer);
 
     private native TechType cloakingTech_native(long pointer);
+
+    private native List<TechType> abilities_native(long pointer);
+
+    private native List<UpgradeType> upgrades_native(long pointer);
 
     private native UpgradeType armorUpgrade_native(long pointer);
 

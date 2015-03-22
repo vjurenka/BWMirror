@@ -50,6 +50,12 @@ You can do it either here or in the generator project. Please don't create merge
 
 You can do it either here or in the generator project. If your bot crashed with JVM exception please include the .log file which was created.
 
+##Changelog
+
+**v 2.1**
+- BWMirror now includes and auto extracts the .dlls required for BWTA2 to work. (This solves the misssing .dlls error)
+- Several new methods added to UnitType class: abilities(), upgrades(), whatBuilds(), requiredUnits()
+- Two new methods added to BWTA class: getNearestTilePosition(), getGroundDistances()
 
 
 

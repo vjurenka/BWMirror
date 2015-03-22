@@ -56,11 +56,11 @@ public class Mirror {
 
     private static final boolean EXTRACT_JAR = true;
 
-    private static final String VERSION = "2_0";
+    private static final String VERSION = "2_1";
 
     static {
         String arch = System.getProperty("os.arch");
-        String dllNames[] = {"bwapi_bridge" + VERSION};
+        String dllNames[] = {"bwapi_bridge" + VERSION, "libgmp-10", "libmpfr-4"};
         if(!arch.equals("x86")){
             throw new UnsupportedOperationException("BWMirror API supports only x86 architecture.");
         }
