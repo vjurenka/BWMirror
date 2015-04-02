@@ -15,6 +15,10 @@ Example bots and other samples will be added later.
 - PositionOrUnit class is also ported, it's used to wrap either a Positions or a Unit object as some methods now take PositionOrUnit parameter.
 - Game.setTextSize now takes bwapi.Text.Size.Enum instead of int to reflect BWAPI4
 
+##Requirements
+- BWAPI, version BWAPI v4.1.0-Beta https://github.com/bwapi/bwapi/releases
+- 32bit JRE
+
 ##FAQ 
 **How do I start creating awesome bots?**
 
@@ -33,15 +37,20 @@ Sure, visit http://www.sscaitournament.com/ and register you bot
 
 http://vjurenka.github.io/BWMirror/javadoc/ , but v2 has only a few comments in javadoc, this will be fixed soon, for now use the the BWAPI documentation http://bwapi.github.io/ , or the v1 javadocs http://bwmirror.jurenka.sk/javadoc/ 
 
-**I'm confused, most of the methods have empty body.**
+**My bot prints the message "Error: Client and Server are not compatible! Client Revision: 4625 Server Revision: 4615" and and fails to load. What's the problem?**
 
-Most of the methods are implemeted in BWAPI. BWMirror acts as a Java wrapper, the actual mapping takes place in BWMirror's .dll, which is machine genereted and it's source can be found under BWMirror-Generator project  https://github.com/vjurenka/BWMirror-Generator
+You have an older version of BWAPI. Please reinstall BWAPI with the correct version (BWAPI v4.1.0-Beta).
+You can chceck your BWAPI revision in ChaosLauncher, by selecting the BWAPI injector plugin. Revision 4625 is required.
 
 **My bot prints the message "BWMirror API supports only x86 architecture." and fails to load. What's the problem?**
 
 Install a 32-bit version of JRE and point your IDE to it. You can find the current 32-bit versions at https://www.java.com/en/download/manual.jsp 
 
 Note: While it's possible to build x64 version of BWMirror API, it fails to cooperate with StarCraft at runtime, as StarCraft is an x86 application. Therefore we only provide the x86 version.
+
+**I'm confused, most of the api's methods have empty body.**
+
+Most of the methods are implemeted in BWAPI. BWMirror acts as a Java wrapper, the actual mapping takes place in BWMirror's .dll, which is machine genereted and it's source can be found under BWMirror-Generator project  https://github.com/vjurenka/BWMirror-Generator
 
 **Where can I suggest new functionality?**
 
@@ -56,6 +65,9 @@ You can do it either here or in the generator project. If your bot crashed with 
 The first time BWTA analyses a map, it can take a few minutes. The results are saved to bwapi-data/BWTA/ folder for later use. We have prepared BWTA data for some maps (the map pool from SSCAITournament).
 
 ##Changelog
+
+**v 2.2**
+- Fixed issues with BWTA2 methods
 
 **v 2.1**
 - BWMirror now includes and auto extracts the .dlls required for BWTA2 to work. (This solves the misssing .dlls error)
