@@ -39,8 +39,7 @@ http://vjurenka.github.io/BWMirror/javadoc/ , but v2 has only a few comments in 
 
 **My bot prints the message "Error: Client and Server are not compatible! Client Revision: 4625 Server Revision: 4615" and and fails to load. What's the problem?**
 
-You have an older version of BWAPI. Please reinstall BWAPI with the correct version (BWAPI v4.1.0-Beta).
-You can chceck your BWAPI revision in ChaosLauncher, by selecting the BWAPI injector plugin. Revision 4625 is required.
+Please update to BWMirror 2.3. If you updated and get the reverse error (client 4615, server 4625), reinstall BWAPI.
 
 **My bot prints the message "BWMirror API supports only x86 architecture." and fails to load. What's the problem?**
 
@@ -65,6 +64,11 @@ You can do it either here or in the generator project. If your bot crashed with 
 The first time BWTA analyses a map, it can take a few minutes. The results are saved to bwapi-data/BWTA/ folder for later use. We have prepared BWTA data for some maps (the map pool from SSCAITournament).
 
 ##Changelog
+
+**v 2.3**
+- Revision 4615 is now required. This is the revision number of BWAPI4.1 official release.
+- Order now has toString method
+- Polygon now has getHoles() and getPoints() methods
 
 **v 2.2**
 - Fixed issues with BWTA2 methods

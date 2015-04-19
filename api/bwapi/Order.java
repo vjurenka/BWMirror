@@ -9,6 +9,10 @@ import java.util.List;
 
 public class Order {
 
+    public String toString() {
+        return toString_native(pointer);
+    }
+
     public static Order Die;
 
     public static Order Stop;
@@ -341,6 +345,8 @@ public class Order {
     }
 
     private long pointer;
+
+    private native String toString_native(long pointer);
 
 
 }

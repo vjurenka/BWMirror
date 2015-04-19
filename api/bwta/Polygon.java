@@ -34,6 +34,14 @@ public class Polygon {
         return getNearestPoint_native(pointer, p);
     }
 
+    public List<Polygon> getHoles() {
+        return getHoles_native(pointer);
+    }
+
+    public List<Position> getPoints() {
+        return getPoints_native(pointer);
+    }
+
 
     private static Map<Long, Polygon> instances = new HashMap<Long, Polygon>();
 
@@ -64,6 +72,10 @@ public class Polygon {
     private native boolean isInside_native(long pointer, Position p);
 
     private native Position getNearestPoint_native(long pointer, Position p);
+
+    private native List<Polygon> getHoles_native(long pointer);
+
+    private native List<Position> getPoints_native(long pointer);
 
 
 }

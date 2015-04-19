@@ -22,6 +22,8 @@ public class BWTA {
 
     public static native void balanceAnalysis();
 
+    public static native void cleanMemory();
+
     public static native int getMaxDistanceTransform();
 
     public static native List<Region> getRegions();
@@ -69,6 +71,10 @@ public class BWTA {
     public static native Pair<TilePosition, Double> getNearestTilePosition(TilePosition start, List<TilePosition> targets);
 
     public static native Map<TilePosition, Double> getGroundDistances(TilePosition start, List<TilePosition> targets);
+
+    public static native List<TilePosition> getShortestPath(TilePosition start, TilePosition end);
+
+    public static native List<TilePosition> getShortestPath(TilePosition start, List<TilePosition> targets);
 
     public static native void buildChokeNodes();
 
