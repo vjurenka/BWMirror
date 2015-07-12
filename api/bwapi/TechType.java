@@ -7,48 +7,84 @@ import java.util.HashMap;
 import java.util.Collection;
 import java.util.List;
 
+/**
+The TechType (or Technology Type, also referred to as an Ability) represents a Unit's ability which can be researched with UnitInterface::research or used with UnitInterface::useTech. In order for a Unit to use its own specialized ability, it must first be available and researched. See also TechTypes
+*/
+/**
+Expected type constructor. If the type is an invalid type, then it becomes Types::Unknown. A type is invalid if its value is less than 0 or greater than Types::Unknown. Parameters id The id that corresponds to this type. It is typically an integer value that corresponds to an internal Broodwar type. If the given id is invalid, then it becomes Types::Unknown.
+*/
 public class TechType {
 
     public String toString() {
         return toString_native(pointer);
     }
 
+/**
+Retrieves the race that is required to research or use the TechType. Note There is an exception where Infested Kerrigan can use Psionic Storm. This does not apply to the behavior of this function. Returns Race object indicating which race is designed to use this technology type.
+*/
     public Race getRace() {
         return getRace_native(pointer);
     }
 
+/**
+Retrieves the mineral cost of researching this technology. Returns Amount of minerals needed in order to research this technology.
+*/
     public int mineralPrice() {
         return mineralPrice_native(pointer);
     }
 
+/**
+Retrieves the vespene gas cost of researching this technology. Returns Amount of vespene gas needed in order to research this technology.
+*/
     public int gasPrice() {
         return gasPrice_native(pointer);
     }
 
+/**
+Retrieves the number of frames needed to research the tech type. Returns The time, in frames, it will take for the research to complete. See also UnitInterface::getRemainingResearchTime
+*/
     public int researchTime() {
         return researchTime_native(pointer);
     }
 
+/**
+Retrieves the amount of energy needed to use this TechType as an ability. Returns Energy cost of the ability. See also UnitInterface::getEnergy
+*/
     public int energyCost() {
         return energyCost_native(pointer);
     }
 
+/**
+Retrieves the UnitType that can research this technology. Returns UnitType that is able to research the technology in the game. Return values UnitTypes::None If the technology/ability is either provided for free or never available.
+*/
     public UnitType whatResearches() {
         return whatResearches_native(pointer);
     }
 
+/**
+Retrieves the Weapon that is attached to this tech type. A technology's WeaponType is used to indicate the range and behaviour of the ability when used by a Unit. Returns WeaponType containing information about the ability's behavior. Return values WeaponTypes::None If there is no corresponding WeaponType.
+*/
     public WeaponType getWeapon() {
         return getWeapon_native(pointer);
     }
 
+/**
+Checks if this ability can be used on other units. Returns true if the ability can be used on other units, and false if it can not.
+*/
     public boolean targetsUnit() {
         return targetsUnit_native(pointer);
     }
 
+/**
+Checks if this ability can be used on the terrain (ground). Returns true if the ability can be used on the terrain.
+*/
     public boolean targetsPosition() {
         return targetsPosition_native(pointer);
     }
 
+/**
+Retrieves the Order that a Unit uses when using this ability. Returns Order representing the action a Unit uses to perform this ability
+*/
     public Order getOrder() {
         return getOrder_native(pointer);
     }

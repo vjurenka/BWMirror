@@ -7,12 +7,21 @@ import java.util.HashMap;
 import java.util.Collection;
 import java.util.List;
 
+/**
+A set containing Player objects.
+*/
 public class Playerset {
 
+/**
+Returns the set of all units that every player in this set owns. Returns Unitset containing Playerset's units See also PlayerInterface::getUnits
+*/
     public List<Unit> getUnits() {
         return getUnits_native(pointer);
     }
 
+/**
+Sets the alliance status with all players contained in the Playerset. Parameters allies Set to true to set the player to allied, or false for enemy. alliedVictory Set to true to turn on allied victory, or false to disable it. See also Game::setAlliance
+*/
     public void setAlliance(boolean allies) {
         setAlliance_native(pointer, allies);
     }

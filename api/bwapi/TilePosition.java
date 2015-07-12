@@ -1,5 +1,7 @@
 package bwapi;
 
+import bwapi.Position;
+
 import java.lang.Override;
 import java.util.HashMap;
 import java.util.Map;
@@ -11,6 +13,8 @@ import java.util.Map;
  */
 public class TilePosition extends AbstractPoint<TilePosition>{
     private int x, y;
+
+    public static final int SIZE_IN_PIXELS = 32;
 
     public TilePosition(int x, int y) {
         this.x = x;
@@ -81,5 +85,9 @@ public class TilePosition extends AbstractPoint<TilePosition>{
 
     public TilePosition getPoint(){
         return this;
+    }
+
+    public Position toPosition(){
+        return new Position(x * SIZE_IN_PIXELS, y * SIZE_IN_PIXELS);
     }
 }

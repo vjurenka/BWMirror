@@ -7,16 +7,28 @@ import java.util.HashMap;
 import java.util.Collection;
 import java.util.List;
 
+/**
+The upgrade type represents a passive upgrade that can be obtained with UnitInterface::upgrade. See also UpgradeTypes
+*/
+/**
+Expected type constructor. If the type is an invalid type, then it becomes Types::Unknown. A type is invalid if its value is less than 0 or greater than Types::Unknown. Parameters id The id that corresponds to this type. It is typically an integer value that corresponds to an internal Broodwar type. If the given id is invalid, then it becomes Types::Unknown.
+*/
 public class UpgradeType {
 
     public String toString() {
         return toString_native(pointer);
     }
 
+/**
+Retrieves the race the upgrade is for. For example, UpgradeTypes::Terran_Infantry_Armor.getRace() will return Races::Terran. Returns Race that this upgrade belongs to.
+*/
     public Race getRace() {
         return getRace_native(pointer);
     }
 
+/**
+Returns the mineral price for the upgrade. Parameters level (optional) The next upgrade level. Note Upgrades start at level 0. Returns The mineral cost of the upgrade for the given level.
+*/
     public int mineralPrice() {
         return mineralPrice_native(pointer);
     }
@@ -25,10 +37,16 @@ public class UpgradeType {
         return mineralPrice_native(pointer, level);
     }
 
+/**
+The amount that the mineral price increases for each additional upgrade. Returns The mineral cost added to the upgrade after each level.
+*/
     public int mineralPriceFactor() {
         return mineralPriceFactor_native(pointer);
     }
 
+/**
+Returns the vespene gas price for the first upgrade. Parameters level (optional) The next upgrade level. Note Upgrades start at level 0. Returns The gas cost of the upgrade for the given level.
+*/
     public int gasPrice() {
         return gasPrice_native(pointer);
     }
@@ -37,10 +55,16 @@ public class UpgradeType {
         return gasPrice_native(pointer, level);
     }
 
+/**
+Returns the amount that the vespene gas price increases for each additional upgrade. Returns The gas cost added to the upgrade after each level.
+*/
     public int gasPriceFactor() {
         return gasPriceFactor_native(pointer);
     }
 
+/**
+Returns the number of frames needed to research the first upgrade. Parameters level (optional) The next upgrade level. Note Upgrades start at level 0. Returns The time cost of the upgrade for the given level.
+*/
     public int upgradeTime() {
         return upgradeTime_native(pointer);
     }
@@ -49,18 +73,30 @@ public class UpgradeType {
         return upgradeTime_native(pointer, level);
     }
 
+/**
+Returns the number of frames that the upgrade time increases for each additional upgrade. Returns The time cost added to the upgrade after each level.
+*/
     public int upgradeTimeFactor() {
         return upgradeTimeFactor_native(pointer);
     }
 
+/**
+Returns the maximum number of times the upgrade can be researched. Returns Maximum number of times this upgrade can be upgraded.
+*/
     public int maxRepeats() {
         return maxRepeats_native(pointer);
     }
 
+/**
+Returns the type of unit that researches the upgrade. Returns The UnitType that is used to upgrade this type.
+*/
     public UnitType whatUpgrades() {
         return whatUpgrades_native(pointer);
     }
 
+/**
+Returns the type of unit that is required for the upgrade. The player must have at least one of these units completed in order to start upgrading this upgrade. Parameters level (optional) The next upgrade level. Note Upgrades start at level 0. Returns UnitType required to obtain this upgrade.
+*/
     public UnitType whatsRequired() {
         return whatsRequired_native(pointer);
     }

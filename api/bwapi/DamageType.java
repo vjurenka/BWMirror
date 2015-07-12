@@ -7,6 +7,12 @@ import java.util.HashMap;
 import java.util.Collection;
 import java.util.List;
 
+/**
+Damage types are used in Broodwar to determine the amount of damage that will be done to a unit. This corresponds with UnitSizeType to determine the damage done to a unit. See also WeaponType, DamageTypes, UnitSizeType View on Liquipedia View on Starcraft Campendium (Official Website) View on Starcraft Wikia
+*/
+/**
+Expected type constructor. If the type is an invalid type, then it becomes Types::Unknown. A type is invalid if its value is less than 0 or greater than Types::Unknown. Parameters id The id that corresponds to this type. It is typically an integer value that corresponds to an internal Broodwar type. If the given id is invalid, then it becomes Types::Unknown.
+*/
 public class DamageType {
 
     public String toString() {

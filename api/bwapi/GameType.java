@@ -7,6 +7,12 @@ import java.util.HashMap;
 import java.util.Collection;
 import java.util.List;
 
+/**
+A class that represents game types in Broodwar. A game type is selected when creating a game. See also GameTypes
+*/
+/**
+Expected type constructor. If the type is an invalid type, then it becomes Types::Unknown. A type is invalid if its value is less than 0 or greater than Types::Unknown. Parameters id The id that corresponds to this type. It is typically an integer value that corresponds to an internal Broodwar type. If the given id is invalid, then it becomes Types::Unknown.
+*/
 public class GameType {
 
     public String toString() {

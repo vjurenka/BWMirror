@@ -7,8 +7,14 @@ import java.util.HashMap;
 import java.util.Collection;
 import java.util.List;
 
+/**
+A container that holds a group of Forces. See also BWAPI::Force
+*/
 public class Forceset {
 
+/**
+Retrieves the set of players that belong to this Force. Returns A Playerset object containing the players that are part of this Force. Example usage: // Get the enemy force, but make sure we have an enemy BWAPI::Force myEnemyForce = BWAPI::Broodwar->enemy() ? BWAPI::Broodwar->enemy()->getForce() : nullptr; if ( myEnemyForce != nullptr ) { Broodwar << "The allies of my enemy are..." << std::endl; for ( auto i = myEnemyForce.begin(); i != myEnemyForce.end(); ++i ) Broodwar << " - " << i->getName() << std::endl; }
+*/
     public List<Player> getPlayers() {
         return getPlayers_native(pointer);
     }

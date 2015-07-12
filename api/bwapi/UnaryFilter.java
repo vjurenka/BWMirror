@@ -7,6 +7,12 @@ import java.util.HashMap;
 import java.util.Collection;
 import java.util.List;
 
+/**
+template<class PType, class Container = std::function<bool(PType)>> class BWAPI::UnaryFilter< PType, Container > UnaryFilter allows for logical functor combinations. Unit myUnit; // The following two if statements are equivalent if ( myUnit->getType().isWorker() && myUnit->isCompleted() && myUnit->isIdle() ) {} if ( (IsWorker && IsCompleted && IsIdle)(myUnit) ) {} Template Parameters PType The type being passed into the predicate, which will be of type bool(PType). Container (optional) Storage container for the function predicate. It is std::function<bool(PType)> by default.
+*/
+/**
+
+*/
 public class UnaryFilter {
 
 

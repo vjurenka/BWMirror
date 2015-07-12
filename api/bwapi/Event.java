@@ -7,24 +7,45 @@ import java.util.HashMap;
 import java.util.Collection;
 import java.util.List;
 
+/**
+null
+*/
+/**
+
+*/
 public class Event {
 
+/**
+
+*/
     public Position getPosition() {
         return getPosition_native(pointer);
     }
 
+/**
+
+*/
     public String getText() {
         return getText_native(pointer);
     }
 
+/**
+
+*/
     public Unit getUnit() {
         return getUnit_native(pointer);
     }
 
+/**
+
+*/
     public Player getPlayer() {
         return getPlayer_native(pointer);
     }
 
+/**
+
+*/
     public boolean isWinner() {
         return isWinner_native(pointer);
     }

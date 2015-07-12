@@ -13,13 +13,26 @@ import bwapi.Unit;
 import bwapi.Pair;
 import bwapi.CenteredObject;
 
+/**
+A chokepoint connects exactly two regions.
+
+
+*/
 public class Chokepoint extends CenteredObject 
 {
 
+/**
+Returns the center of the chokepoint.
+
+*/
     public Position getCenter() {
         return getCenter_native(pointer);
     }
 
+/**
+Returns the width of the chokepoint.
+
+*/
     public double getWidth() {
         return getWidth_native(pointer);
     }

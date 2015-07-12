@@ -7,6 +7,9 @@ import java.util.HashMap;
 import java.util.Collection;
 import java.util.List;
 
+/**
+A container for a set of Bullet objects.
+*/
 public class Bulletset {
 
 
