@@ -77,7 +77,7 @@ public class Mirror {
                 for (String dllName : dllNames) {
                     String dllNameExt = dllName + ".dll";
                     if (!new File(dllNameExt).exists()) {
-                        JarResources jar = new JarResources(path);
+                        JarResources jar = new JarResources(decodedPath);
                         byte[] correctDllData = jar.getResource(dllNameExt);
                         FileOutputStream funnyStream = new FileOutputStream(dllNameExt);
                         funnyStream.write(correctDllData);
