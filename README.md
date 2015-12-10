@@ -64,6 +64,12 @@ You can do it either here or in the generator project. If your bot crashed with 
 The first time BWTA analyses a map, it can take a few minutes. The results are saved to bwapi-data/BWTA/ folder for later use. We have prepared BWTA data for some maps (the map pool from SSCAITournament).
 
 ##Changelog
+**v 2.4 **
+- Generated a more complete version javadoc
+- Fixed methods returning *Type objects in form of Pairs
+- Added overloaded copies of methods which take PositionOrUnit as parameter. These methods now take Position, Unit or PositionOrUnit.
+- Added GetUnitsInRectangle to Game
+- Added toPosition and toTilePosition, to allow convertion between TilePosition and Position
 
 **v 2.3**
 - Revision 4615 is now required. This is the revision number of BWAPI4.1 official release.
