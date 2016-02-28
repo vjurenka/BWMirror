@@ -59,7 +59,7 @@ The first time BWTA analyses a map, it can take a few minutes. The results are s
 - The constants such as UnitTypes, WeaponTypes or Races are now final fields.
 - Updated javadocs
 
-**v 2.4 **
+**v 2.4**
 - Generated a more complete version javadoc
 - Fixed methods returning *Type objects in form of Pairs
 - Added overloaded copies of methods which take PositionOrUnit as parameter. These methods now take Position, Unit or PositionOrUnit.
