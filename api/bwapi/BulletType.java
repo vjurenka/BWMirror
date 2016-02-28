@@ -19,79 +19,79 @@ public class BulletType {
         return toString_native(pointer);
     }
 
-    public static BulletType Melee;
+    public static final BulletType Melee = new BulletType(0);
 
-    public static BulletType Fusion_Cutter_Hit;
+    public static final BulletType Fusion_Cutter_Hit = new BulletType(0);
 
-    public static BulletType Gauss_Rifle_Hit;
+    public static final BulletType Gauss_Rifle_Hit = new BulletType(0);
 
-    public static BulletType C_10_Canister_Rifle_Hit;
+    public static final BulletType C_10_Canister_Rifle_Hit = new BulletType(0);
 
-    public static BulletType Gemini_Missiles;
+    public static final BulletType Gemini_Missiles = new BulletType(0);
 
-    public static BulletType Fragmentation_Grenade;
+    public static final BulletType Fragmentation_Grenade = new BulletType(0);
 
-    public static BulletType Longbolt_Missile;
+    public static final BulletType Longbolt_Missile = new BulletType(0);
 
-    public static BulletType ATS_ATA_Laser_Battery;
+    public static final BulletType ATS_ATA_Laser_Battery = new BulletType(0);
 
-    public static BulletType Burst_Lasers;
+    public static final BulletType Burst_Lasers = new BulletType(0);
 
-    public static BulletType Arclite_Shock_Cannon_Hit;
+    public static final BulletType Arclite_Shock_Cannon_Hit = new BulletType(0);
 
-    public static BulletType EMP_Missile;
+    public static final BulletType EMP_Missile = new BulletType(0);
 
-    public static BulletType Dual_Photon_Blasters_Hit;
+    public static final BulletType Dual_Photon_Blasters_Hit = new BulletType(0);
 
-    public static BulletType Particle_Beam_Hit;
+    public static final BulletType Particle_Beam_Hit = new BulletType(0);
 
-    public static BulletType Anti_Matter_Missile;
+    public static final BulletType Anti_Matter_Missile = new BulletType(0);
 
-    public static BulletType Pulse_Cannon;
+    public static final BulletType Pulse_Cannon = new BulletType(0);
 
-    public static BulletType Psionic_Shockwave_Hit;
+    public static final BulletType Psionic_Shockwave_Hit = new BulletType(0);
 
-    public static BulletType Psionic_Storm;
+    public static final BulletType Psionic_Storm = new BulletType(0);
 
-    public static BulletType Yamato_Gun;
+    public static final BulletType Yamato_Gun = new BulletType(0);
 
-    public static BulletType Phase_Disruptor;
+    public static final BulletType Phase_Disruptor = new BulletType(0);
 
-    public static BulletType STA_STS_Cannon_Overlay;
+    public static final BulletType STA_STS_Cannon_Overlay = new BulletType(0);
 
-    public static BulletType Sunken_Colony_Tentacle;
+    public static final BulletType Sunken_Colony_Tentacle = new BulletType(0);
 
-    public static BulletType Acid_Spore;
+    public static final BulletType Acid_Spore = new BulletType(0);
 
-    public static BulletType Glave_Wurm;
+    public static final BulletType Glave_Wurm = new BulletType(0);
 
-    public static BulletType Seeker_Spores;
+    public static final BulletType Seeker_Spores = new BulletType(0);
 
-    public static BulletType Queen_Spell_Carrier;
+    public static final BulletType Queen_Spell_Carrier = new BulletType(0);
 
-    public static BulletType Plague_Cloud;
+    public static final BulletType Plague_Cloud = new BulletType(0);
 
-    public static BulletType Consume;
+    public static final BulletType Consume = new BulletType(0);
 
-    public static BulletType Ensnare;
+    public static final BulletType Ensnare = new BulletType(0);
 
-    public static BulletType Needle_Spine_Hit;
+    public static final BulletType Needle_Spine_Hit = new BulletType(0);
 
-    public static BulletType Invisible;
+    public static final BulletType Invisible = new BulletType(0);
 
-    public static BulletType Optical_Flare_Grenade;
+    public static final BulletType Optical_Flare_Grenade = new BulletType(0);
 
-    public static BulletType Halo_Rockets;
+    public static final BulletType Halo_Rockets = new BulletType(0);
 
-    public static BulletType Subterranean_Spines;
+    public static final BulletType Subterranean_Spines = new BulletType(0);
 
-    public static BulletType Corrosive_Acid_Shot;
+    public static final BulletType Corrosive_Acid_Shot = new BulletType(0);
 
-    public static BulletType Neutron_Flare;
+    public static final BulletType Neutron_Flare = new BulletType(0);
 
-    public static BulletType None;
+    public static final BulletType None = new BulletType(0);
 
-    public static BulletType Unknown;
+    public static final BulletType Unknown = new BulletType(0);
 
 
     private static Map<Long, BulletType> instances = new HashMap<Long, BulletType>();

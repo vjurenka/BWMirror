@@ -381,6 +381,13 @@ Retrieves the building type that a worker (SCV, Probe, Drone) is about to constr
     }
 
 /**
+Retrieves the list of units queued up to be trained. Returns a UnitType::set containing all the types that are in this factory's training queue. See also train, cancelTrain, isTraining
+*/
+    public List<UnitType> getTrainingQueue() {
+        return getTrainingQueue_native(pointer);
+    }
+
+/**
 Retrieves the technology that this unit is currently researching. Returns TechType indicating the technology being researched by this unit. Return values TechTypes::None if this unit is not researching anything. See also research, cancelResearch, isResearching, getRemainingResearchTime
 */
     public TechType getTech() {
@@ -927,7 +934,7 @@ Checks if this unit is currently taking damage from a Psionic Storm. Returns tru
     }
 
 /**
-Checks if this unit has power. Most structures are powered by default, but Protoss structures require a Pylon to be powered and functional. Returns true if this unit has power or is inaccessible, and false if this unit is unpowered.
+Checks if this unit has power. Most structures are powered by default, but Protoss structures require a Pylon to be powered and functional. Returns true if this unit has power or is inaccessible, and false if this unit is unpowered. Since 4.0.1 Beta (previously isUnpowered)
 */
     public boolean isPowered() {
         return isPowered_native(pointer);
@@ -3044,6 +3051,8 @@ Cheap checks for whether the unit is able to execute a placeCOP command. See als
     private native int getStimTimer_native(long pointer);
 
     private native UnitType getBuildType_native(long pointer);
+
+    private native List<UnitType> getTrainingQueue_native(long pointer);
 
     private native TechType getTech_native(long pointer);
 

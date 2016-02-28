@@ -19,55 +19,55 @@ public class ExplosionType {
         return toString_native(pointer);
     }
 
-    public static ExplosionType None;
+    public static final ExplosionType None = new ExplosionType(0);
 
-    public static ExplosionType Normal;
+    public static final ExplosionType Normal = new ExplosionType(0);
 
-    public static ExplosionType Radial_Splash;
+    public static final ExplosionType Radial_Splash = new ExplosionType(0);
 
-    public static ExplosionType Enemy_Splash;
+    public static final ExplosionType Enemy_Splash = new ExplosionType(0);
 
-    public static ExplosionType Lockdown;
+    public static final ExplosionType Lockdown = new ExplosionType(0);
 
-    public static ExplosionType Nuclear_Missile;
+    public static final ExplosionType Nuclear_Missile = new ExplosionType(0);
 
-    public static ExplosionType Parasite;
+    public static final ExplosionType Parasite = new ExplosionType(0);
 
-    public static ExplosionType Broodlings;
+    public static final ExplosionType Broodlings = new ExplosionType(0);
 
-    public static ExplosionType EMP_Shockwave;
+    public static final ExplosionType EMP_Shockwave = new ExplosionType(0);
 
-    public static ExplosionType Irradiate;
+    public static final ExplosionType Irradiate = new ExplosionType(0);
 
-    public static ExplosionType Ensnare;
+    public static final ExplosionType Ensnare = new ExplosionType(0);
 
-    public static ExplosionType Plague;
+    public static final ExplosionType Plague = new ExplosionType(0);
 
-    public static ExplosionType Stasis_Field;
+    public static final ExplosionType Stasis_Field = new ExplosionType(0);
 
-    public static ExplosionType Dark_Swarm;
+    public static final ExplosionType Dark_Swarm = new ExplosionType(0);
 
-    public static ExplosionType Consume;
+    public static final ExplosionType Consume = new ExplosionType(0);
 
-    public static ExplosionType Yamato_Gun;
+    public static final ExplosionType Yamato_Gun = new ExplosionType(0);
 
-    public static ExplosionType Restoration;
+    public static final ExplosionType Restoration = new ExplosionType(0);
 
-    public static ExplosionType Disruption_Web;
+    public static final ExplosionType Disruption_Web = new ExplosionType(0);
 
-    public static ExplosionType Corrosive_Acid;
+    public static final ExplosionType Corrosive_Acid = new ExplosionType(0);
 
-    public static ExplosionType Mind_Control;
+    public static final ExplosionType Mind_Control = new ExplosionType(0);
 
-    public static ExplosionType Feedback;
+    public static final ExplosionType Feedback = new ExplosionType(0);
 
-    public static ExplosionType Optical_Flare;
+    public static final ExplosionType Optical_Flare = new ExplosionType(0);
 
-    public static ExplosionType Maelstrom;
+    public static final ExplosionType Maelstrom = new ExplosionType(0);
 
-    public static ExplosionType Air_Splash;
+    public static final ExplosionType Air_Splash = new ExplosionType(0);
 
-    public static ExplosionType Unknown;
+    public static final ExplosionType Unknown = new ExplosionType(0);
 
 
     private static Map<Long, ExplosionType> instances = new HashMap<Long, ExplosionType>();

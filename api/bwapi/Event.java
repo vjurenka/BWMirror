@@ -18,6 +18,13 @@ public class Event {
 /**
 
 */
+    public Enum getType() {
+        return getType_native(pointer);
+    }
+
+/**
+
+*/
     public Position getPosition() {
         return getPosition_native(pointer);
     }
@@ -70,6 +77,8 @@ public class Event {
     }
 
     private long pointer;
+
+    private native Enum getType_native(long pointer);
 
     private native Position getPosition_native(long pointer);
 

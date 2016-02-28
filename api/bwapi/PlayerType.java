@@ -33,27 +33,27 @@ Identifies whether or not this type is used in-game. A type such as PlayerTypes:
         return isGameType_native(pointer);
     }
 
-    public static PlayerType None;
+    public static final PlayerType None = new PlayerType(0);
 
-    public static PlayerType Computer;
+    public static final PlayerType Computer = new PlayerType(0);
 
-    public static PlayerType Player;
+    public static final PlayerType Player = new PlayerType(0);
 
-    public static PlayerType RescuePassive;
+    public static final PlayerType RescuePassive = new PlayerType(0);
 
-    public static PlayerType EitherPreferComputer;
+    public static final PlayerType EitherPreferComputer = new PlayerType(0);
 
-    public static PlayerType EitherPreferHuman;
+    public static final PlayerType EitherPreferHuman = new PlayerType(0);
 
-    public static PlayerType Neutral;
+    public static final PlayerType Neutral = new PlayerType(0);
 
-    public static PlayerType Closed;
+    public static final PlayerType Closed = new PlayerType(0);
 
-    public static PlayerType PlayerLeft;
+    public static final PlayerType PlayerLeft = new PlayerType(0);
 
-    public static PlayerType ComputerLeft;
+    public static final PlayerType ComputerLeft = new PlayerType(0);
 
-    public static PlayerType Unknown;
+    public static final PlayerType Unknown = new PlayerType(0);
 
 
     private static Map<Long, PlayerType> instances = new HashMap<Long, PlayerType>();

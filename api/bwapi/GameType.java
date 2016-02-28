@@ -19,35 +19,35 @@ public class GameType {
         return toString_native(pointer);
     }
 
-    public static GameType Melee;
+    public static final GameType Melee = new GameType(0);
 
-    public static GameType Free_For_All;
+    public static final GameType Free_For_All = new GameType(0);
 
-    public static GameType One_on_One;
+    public static final GameType One_on_One = new GameType(0);
 
-    public static GameType Capture_The_Flag;
+    public static final GameType Capture_The_Flag = new GameType(0);
 
-    public static GameType Greed;
+    public static final GameType Greed = new GameType(0);
 
-    public static GameType Slaughter;
+    public static final GameType Slaughter = new GameType(0);
 
-    public static GameType Sudden_Death;
+    public static final GameType Sudden_Death = new GameType(0);
 
-    public static GameType Ladder;
+    public static final GameType Ladder = new GameType(0);
 
-    public static GameType Use_Map_Settings;
+    public static final GameType Use_Map_Settings = new GameType(0);
 
-    public static GameType Team_Melee;
+    public static final GameType Team_Melee = new GameType(0);
 
-    public static GameType Team_Free_For_All;
+    public static final GameType Team_Free_For_All = new GameType(0);
 
-    public static GameType Team_Capture_The_Flag;
+    public static final GameType Team_Capture_The_Flag = new GameType(0);
 
-    public static GameType Top_vs_Bottom;
+    public static final GameType Top_vs_Bottom = new GameType(0);
 
-    public static GameType None;
+    public static final GameType None = new GameType(0);
 
-    public static GameType Unknown;
+    public static final GameType Unknown = new GameType(0);
 
 
     private static Map<Long, GameType> instances = new HashMap<Long, GameType>();

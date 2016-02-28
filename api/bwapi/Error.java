@@ -19,61 +19,61 @@ public class Error {
         return toString_native(pointer);
     }
 
-    public static Error Unit_Does_Not_Exist;
+    public static final Error Unit_Does_Not_Exist = new Error(0);
 
-    public static Error Unit_Not_Visible;
+    public static final Error Unit_Not_Visible = new Error(0);
 
-    public static Error Unit_Not_Owned;
+    public static final Error Unit_Not_Owned = new Error(0);
 
-    public static Error Unit_Busy;
+    public static final Error Unit_Busy = new Error(0);
 
-    public static Error Incompatible_UnitType;
+    public static final Error Incompatible_UnitType = new Error(0);
 
-    public static Error Incompatible_TechType;
+    public static final Error Incompatible_TechType = new Error(0);
 
-    public static Error Incompatible_State;
+    public static final Error Incompatible_State = new Error(0);
 
-    public static Error Already_Researched;
+    public static final Error Already_Researched = new Error(0);
 
-    public static Error Fully_Upgraded;
+    public static final Error Fully_Upgraded = new Error(0);
 
-    public static Error Currently_Researching;
+    public static final Error Currently_Researching = new Error(0);
 
-    public static Error Currently_Upgrading;
+    public static final Error Currently_Upgrading = new Error(0);
 
-    public static Error Insufficient_Minerals;
+    public static final Error Insufficient_Minerals = new Error(0);
 
-    public static Error Insufficient_Gas;
+    public static final Error Insufficient_Gas = new Error(0);
 
-    public static Error Insufficient_Supply;
+    public static final Error Insufficient_Supply = new Error(0);
 
-    public static Error Insufficient_Energy;
+    public static final Error Insufficient_Energy = new Error(0);
 
-    public static Error Insufficient_Tech;
+    public static final Error Insufficient_Tech = new Error(0);
 
-    public static Error Insufficient_Ammo;
+    public static final Error Insufficient_Ammo = new Error(0);
 
-    public static Error Insufficient_Space;
+    public static final Error Insufficient_Space = new Error(0);
 
-    public static Error Invalid_Tile_Position;
+    public static final Error Invalid_Tile_Position = new Error(0);
 
-    public static Error Unbuildable_Location;
+    public static final Error Unbuildable_Location = new Error(0);
 
-    public static Error Unreachable_Location;
+    public static final Error Unreachable_Location = new Error(0);
 
-    public static Error Out_Of_Range;
+    public static final Error Out_Of_Range = new Error(0);
 
-    public static Error Unable_To_Hit;
+    public static final Error Unable_To_Hit = new Error(0);
 
-    public static Error Access_Denied;
+    public static final Error Access_Denied = new Error(0);
 
-    public static Error File_Not_Found;
+    public static final Error File_Not_Found = new Error(0);
 
-    public static Error Invalid_Parameter;
+    public static final Error Invalid_Parameter = new Error(0);
 
-    public static Error None;
+    public static final Error None = new Error(0);
 
-    public static Error Unknown;
+    public static final Error Unknown = new Error(0);
 
 
     private static Map<Long, Error> instances = new HashMap<Long, Error>();

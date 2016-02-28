@@ -19,97 +19,97 @@ public class UnitCommandType {
         return toString_native(pointer);
     }
 
-    public static UnitCommandType Attack_Move;
+    public static final UnitCommandType Attack_Move = new UnitCommandType(0);
 
-    public static UnitCommandType Attack_Unit;
+    public static final UnitCommandType Attack_Unit = new UnitCommandType(0);
 
-    public static UnitCommandType Build;
+    public static final UnitCommandType Build = new UnitCommandType(0);
 
-    public static UnitCommandType Build_Addon;
+    public static final UnitCommandType Build_Addon = new UnitCommandType(0);
 
-    public static UnitCommandType Train;
+    public static final UnitCommandType Train = new UnitCommandType(0);
 
-    public static UnitCommandType Morph;
+    public static final UnitCommandType Morph = new UnitCommandType(0);
 
-    public static UnitCommandType Research;
+    public static final UnitCommandType Research = new UnitCommandType(0);
 
-    public static UnitCommandType Upgrade;
+    public static final UnitCommandType Upgrade = new UnitCommandType(0);
 
-    public static UnitCommandType Set_Rally_Position;
+    public static final UnitCommandType Set_Rally_Position = new UnitCommandType(0);
 
-    public static UnitCommandType Set_Rally_Unit;
+    public static final UnitCommandType Set_Rally_Unit = new UnitCommandType(0);
 
-    public static UnitCommandType Move;
+    public static final UnitCommandType Move = new UnitCommandType(0);
 
-    public static UnitCommandType Patrol;
+    public static final UnitCommandType Patrol = new UnitCommandType(0);
 
-    public static UnitCommandType Hold_Position;
+    public static final UnitCommandType Hold_Position = new UnitCommandType(0);
 
-    public static UnitCommandType Stop;
+    public static final UnitCommandType Stop = new UnitCommandType(0);
 
-    public static UnitCommandType Follow;
+    public static final UnitCommandType Follow = new UnitCommandType(0);
 
-    public static UnitCommandType Gather;
+    public static final UnitCommandType Gather = new UnitCommandType(0);
 
-    public static UnitCommandType Return_Cargo;
+    public static final UnitCommandType Return_Cargo = new UnitCommandType(0);
 
-    public static UnitCommandType Repair;
+    public static final UnitCommandType Repair = new UnitCommandType(0);
 
-    public static UnitCommandType Burrow;
+    public static final UnitCommandType Burrow = new UnitCommandType(0);
 
-    public static UnitCommandType Unburrow;
+    public static final UnitCommandType Unburrow = new UnitCommandType(0);
 
-    public static UnitCommandType Cloak;
+    public static final UnitCommandType Cloak = new UnitCommandType(0);
 
-    public static UnitCommandType Decloak;
+    public static final UnitCommandType Decloak = new UnitCommandType(0);
 
-    public static UnitCommandType Siege;
+    public static final UnitCommandType Siege = new UnitCommandType(0);
 
-    public static UnitCommandType Unsiege;
+    public static final UnitCommandType Unsiege = new UnitCommandType(0);
 
-    public static UnitCommandType Lift;
+    public static final UnitCommandType Lift = new UnitCommandType(0);
 
-    public static UnitCommandType Land;
+    public static final UnitCommandType Land = new UnitCommandType(0);
 
-    public static UnitCommandType Load;
+    public static final UnitCommandType Load = new UnitCommandType(0);
 
-    public static UnitCommandType Unload;
+    public static final UnitCommandType Unload = new UnitCommandType(0);
 
-    public static UnitCommandType Unload_All;
+    public static final UnitCommandType Unload_All = new UnitCommandType(0);
 
-    public static UnitCommandType Unload_All_Position;
+    public static final UnitCommandType Unload_All_Position = new UnitCommandType(0);
 
-    public static UnitCommandType Right_Click_Position;
+    public static final UnitCommandType Right_Click_Position = new UnitCommandType(0);
 
-    public static UnitCommandType Right_Click_Unit;
+    public static final UnitCommandType Right_Click_Unit = new UnitCommandType(0);
 
-    public static UnitCommandType Halt_Construction;
+    public static final UnitCommandType Halt_Construction = new UnitCommandType(0);
 
-    public static UnitCommandType Cancel_Construction;
+    public static final UnitCommandType Cancel_Construction = new UnitCommandType(0);
 
-    public static UnitCommandType Cancel_Addon;
+    public static final UnitCommandType Cancel_Addon = new UnitCommandType(0);
 
-    public static UnitCommandType Cancel_Train;
+    public static final UnitCommandType Cancel_Train = new UnitCommandType(0);
 
-    public static UnitCommandType Cancel_Train_Slot;
+    public static final UnitCommandType Cancel_Train_Slot = new UnitCommandType(0);
 
-    public static UnitCommandType Cancel_Morph;
+    public static final UnitCommandType Cancel_Morph = new UnitCommandType(0);
 
-    public static UnitCommandType Cancel_Research;
+    public static final UnitCommandType Cancel_Research = new UnitCommandType(0);
 
-    public static UnitCommandType Cancel_Upgrade;
+    public static final UnitCommandType Cancel_Upgrade = new UnitCommandType(0);
 
-    public static UnitCommandType Use_Tech;
+    public static final UnitCommandType Use_Tech = new UnitCommandType(0);
 
-    public static UnitCommandType Use_Tech_Position;
+    public static final UnitCommandType Use_Tech_Position = new UnitCommandType(0);
 
-    public static UnitCommandType Use_Tech_Unit;
+    public static final UnitCommandType Use_Tech_Unit = new UnitCommandType(0);
 
-    public static UnitCommandType Place_COP;
+    public static final UnitCommandType Place_COP = new UnitCommandType(0);
 
-    public static UnitCommandType None;
+    public static final UnitCommandType None = new UnitCommandType(0);
 
-    public static UnitCommandType Unknown;
+    public static final UnitCommandType Unknown = new UnitCommandType(0);
 
 
     private static Map<Long, UnitCommandType> instances = new HashMap<Long, UnitCommandType>();

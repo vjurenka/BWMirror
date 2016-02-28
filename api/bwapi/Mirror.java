@@ -56,7 +56,7 @@ public class Mirror {
 
     private static final boolean EXTRACT_JAR = true;
 
-    private static final String VERSION = "2_4";
+    private static final String VERSION = "2_5";
 
     static {
         String arch = System.getProperty("os.arch");

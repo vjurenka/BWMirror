@@ -89,77 +89,84 @@ Retrieves the Order that a Unit uses when using this ability. Returns Order repr
         return getOrder_native(pointer);
     }
 
-    public static TechType Stim_Packs;
+/**
+Retrieves the UnitType required to research this technology. The required unit type must be a completed unit owned by the player researching the technology. Returns UnitType that is needed to research this tech type. Return values UnitTypes::None if no unit is required to research this tech type. See also PlayerInterface::completedUnitCount Since 4.1.2
+*/
+    public UnitType requiredUnit() {
+        return requiredUnit_native(pointer);
+    }
 
-    public static TechType Lockdown;
+    public static final TechType Stim_Packs = new TechType(0);
 
-    public static TechType EMP_Shockwave;
+    public static final TechType Lockdown = new TechType(0);
 
-    public static TechType Spider_Mines;
+    public static final TechType EMP_Shockwave = new TechType(0);
 
-    public static TechType Scanner_Sweep;
+    public static final TechType Spider_Mines = new TechType(0);
 
-    public static TechType Tank_Siege_Mode;
+    public static final TechType Scanner_Sweep = new TechType(0);
 
-    public static TechType Defensive_Matrix;
+    public static final TechType Tank_Siege_Mode = new TechType(0);
 
-    public static TechType Irradiate;
+    public static final TechType Defensive_Matrix = new TechType(0);
 
-    public static TechType Yamato_Gun;
+    public static final TechType Irradiate = new TechType(0);
 
-    public static TechType Cloaking_Field;
+    public static final TechType Yamato_Gun = new TechType(0);
 
-    public static TechType Personnel_Cloaking;
+    public static final TechType Cloaking_Field = new TechType(0);
 
-    public static TechType Burrowing;
+    public static final TechType Personnel_Cloaking = new TechType(0);
 
-    public static TechType Infestation;
+    public static final TechType Restoration = new TechType(0);
 
-    public static TechType Spawn_Broodlings;
+    public static final TechType Optical_Flare = new TechType(0);
 
-    public static TechType Dark_Swarm;
+    public static final TechType Healing = new TechType(0);
 
-    public static TechType Plague;
+    public static final TechType Nuclear_Strike = new TechType(0);
 
-    public static TechType Consume;
+    public static final TechType Burrowing = new TechType(0);
 
-    public static TechType Ensnare;
+    public static final TechType Infestation = new TechType(0);
 
-    public static TechType Parasite;
+    public static final TechType Spawn_Broodlings = new TechType(0);
 
-    public static TechType Psionic_Storm;
+    public static final TechType Dark_Swarm = new TechType(0);
 
-    public static TechType Hallucination;
+    public static final TechType Plague = new TechType(0);
 
-    public static TechType Recall;
+    public static final TechType Consume = new TechType(0);
 
-    public static TechType Stasis_Field;
+    public static final TechType Ensnare = new TechType(0);
 
-    public static TechType Archon_Warp;
+    public static final TechType Parasite = new TechType(0);
 
-    public static TechType Restoration;
+    public static final TechType Lurker_Aspect = new TechType(0);
 
-    public static TechType Disruption_Web;
+    public static final TechType Psionic_Storm = new TechType(0);
 
-    public static TechType Mind_Control;
+    public static final TechType Hallucination = new TechType(0);
 
-    public static TechType Dark_Archon_Meld;
+    public static final TechType Recall = new TechType(0);
 
-    public static TechType Feedback;
+    public static final TechType Stasis_Field = new TechType(0);
 
-    public static TechType Optical_Flare;
+    public static final TechType Archon_Warp = new TechType(0);
 
-    public static TechType Maelstrom;
+    public static final TechType Disruption_Web = new TechType(0);
 
-    public static TechType Lurker_Aspect;
+    public static final TechType Mind_Control = new TechType(0);
 
-    public static TechType Healing;
+    public static final TechType Dark_Archon_Meld = new TechType(0);
 
-    public static TechType None;
+    public static final TechType Feedback = new TechType(0);
 
-    public static TechType Nuclear_Strike;
+    public static final TechType Maelstrom = new TechType(0);
 
-    public static TechType Unknown;
+    public static final TechType None = new TechType(0);
+
+    public static final TechType Unknown = new TechType(0);
 
 
     private static Map<Long, TechType> instances = new HashMap<Long, TechType>();
@@ -203,6 +210,8 @@ Retrieves the Order that a Unit uses when using this ability. Returns Order repr
     private native boolean targetsPosition_native(long pointer);
 
     private native Order getOrder_native(long pointer);
+
+    private native UnitType requiredUnit_native(long pointer);
 
 
 }

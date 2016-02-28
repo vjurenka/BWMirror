@@ -415,6 +415,17 @@ Checks if a unit type can be created by the player. Certain unit types may be di
         return isUnitAvailable_native(pointer, unit);
     }
 
+/**
+Verifies that this player satisfies a unit type requirement. This verifies complex type requirements involving morphable Zerg structures. For example, if something requires a Spire, but the player has (or is in the process of morphing) a Greater Spire, this function will identify the requirement. It is simply a convenience function that performs all of the requirement checks. Parameters unit The UnitType to check. amount (optional) The amount of units that are required. Returns true if the unit type requirements are met, and false otherwise. Since 4.1.2
+*/
+    public boolean hasUnitTypeRequirement(UnitType unit) {
+        return hasUnitTypeRequirement_native(pointer, unit);
+    }
+
+    public boolean hasUnitTypeRequirement(UnitType unit, int amount) {
+        return hasUnitTypeRequirement_native(pointer, unit, amount);
+    }
+
 
     private static Map<Long, Player> instances = new HashMap<Long, Player>();
 
@@ -557,6 +568,10 @@ Checks if a unit type can be created by the player. Certain unit types may be di
     private native boolean isResearchAvailable_native(long pointer, TechType tech);
 
     private native boolean isUnitAvailable_native(long pointer, UnitType unit);
+
+    private native boolean hasUnitTypeRequirement_native(long pointer, UnitType unit);
+
+    private native boolean hasUnitTypeRequirement_native(long pointer, UnitType unit, int amount);
 
 
 }

@@ -19,19 +19,19 @@ public class DamageType {
         return toString_native(pointer);
     }
 
-    public static DamageType Independent;
+    public static final DamageType Independent = new DamageType(0);
 
-    public static DamageType Explosive;
+    public static final DamageType Explosive = new DamageType(0);
 
-    public static DamageType Concussive;
+    public static final DamageType Concussive = new DamageType(0);
 
-    public static DamageType Normal;
+    public static final DamageType Normal = new DamageType(0);
 
-    public static DamageType Ignore_Armor;
+    public static final DamageType Ignore_Armor = new DamageType(0);
 
-    public static DamageType None;
+    public static final DamageType None = new DamageType(0);
 
-    public static DamageType Unknown;
+    public static final DamageType Unknown = new DamageType(0);
 
 
     private static Map<Long, DamageType> instances = new HashMap<Long, DamageType>();

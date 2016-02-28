@@ -27,7 +27,7 @@ Retrieves the technology type that must be researched before this weapon can be 
     }
 
 /**
-Retrieves the unit type that is intended to use this weapon type. Note There is a rare case where some hero unit types use the same weapon. Todo: specify which types use the same weapon Returns The UnitType that uses this weapon. See also UnitType::groundWeapon, UnitType::airWeapon
+Retrieves the unit type that is intended to use this weapon type. Note There is a rare case where some hero unit types use the same weapon. Returns The UnitType that uses this weapon. See also UnitType::groundWeapon, UnitType::airWeapon
 */
     public UnitType whatUses() {
         return whatUses_native(pointer);
@@ -97,21 +97,21 @@ Retrieves the maximum attack range of the weapon, measured in pixels. Returns Ma
     }
 
 /**
-Retrieves the inner radius used for splash damage calculations, in pixels. Returns Radius of the inner splash area, in pixels. Todo: Add damage calculation.
+Retrieves the inner radius used for splash damage calculations, in pixels. Returns Radius of the inner splash area, in pixels.
 */
     public int innerSplashRadius() {
         return innerSplashRadius_native(pointer);
     }
 
 /**
-Retrieves the middle radius used for splash damage calculations, in pixels. Returns Radius of the middle splash area, in pixels. Todo: Add damage calculation.
+Retrieves the middle radius used for splash damage calculations, in pixels. Returns Radius of the middle splash area, in pixels.
 */
     public int medianSplashRadius() {
         return medianSplashRadius_native(pointer);
     }
 
 /**
-Retrieves the outer radius used for splash damage calculations, in pixels. Returns Radius of the outer splash area, in pixels. Todo: Add damage calculation.
+Retrieves the outer radius used for splash damage calculations, in pixels. Returns Radius of the outer splash area, in pixels.
 */
     public int outerSplashRadius() {
         return outerSplashRadius_native(pointer);
@@ -180,209 +180,209 @@ Checks if this weapon type can only target units owned by the same player. This 
         return targetsOwn_native(pointer);
     }
 
-    public static WeaponType Gauss_Rifle;
+    public static final WeaponType Gauss_Rifle = new WeaponType(0);
 
-    public static WeaponType Gauss_Rifle_Jim_Raynor;
+    public static final WeaponType Gauss_Rifle_Jim_Raynor = new WeaponType(0);
 
-    public static WeaponType C_10_Canister_Rifle;
+    public static final WeaponType C_10_Canister_Rifle = new WeaponType(0);
 
-    public static WeaponType C_10_Canister_Rifle_Sarah_Kerrigan;
+    public static final WeaponType C_10_Canister_Rifle_Sarah_Kerrigan = new WeaponType(0);
 
-    public static WeaponType C_10_Canister_Rifle_Samir_Duran;
+    public static final WeaponType C_10_Canister_Rifle_Samir_Duran = new WeaponType(0);
 
-    public static WeaponType C_10_Canister_Rifle_Infested_Duran;
+    public static final WeaponType C_10_Canister_Rifle_Infested_Duran = new WeaponType(0);
 
-    public static WeaponType C_10_Canister_Rifle_Alexei_Stukov;
+    public static final WeaponType C_10_Canister_Rifle_Alexei_Stukov = new WeaponType(0);
 
-    public static WeaponType Fragmentation_Grenade;
+    public static final WeaponType Fragmentation_Grenade = new WeaponType(0);
 
-    public static WeaponType Fragmentation_Grenade_Jim_Raynor;
+    public static final WeaponType Fragmentation_Grenade_Jim_Raynor = new WeaponType(0);
 
-    public static WeaponType Spider_Mines;
+    public static final WeaponType Spider_Mines = new WeaponType(0);
 
-    public static WeaponType Twin_Autocannons;
+    public static final WeaponType Twin_Autocannons = new WeaponType(0);
 
-    public static WeaponType Twin_Autocannons_Alan_Schezar;
+    public static final WeaponType Twin_Autocannons_Alan_Schezar = new WeaponType(0);
 
-    public static WeaponType Hellfire_Missile_Pack;
+    public static final WeaponType Hellfire_Missile_Pack = new WeaponType(0);
 
-    public static WeaponType Hellfire_Missile_Pack_Alan_Schezar;
+    public static final WeaponType Hellfire_Missile_Pack_Alan_Schezar = new WeaponType(0);
 
-    public static WeaponType Arclite_Cannon;
+    public static final WeaponType Arclite_Cannon = new WeaponType(0);
 
-    public static WeaponType Arclite_Cannon_Edmund_Duke;
+    public static final WeaponType Arclite_Cannon_Edmund_Duke = new WeaponType(0);
 
-    public static WeaponType Fusion_Cutter;
+    public static final WeaponType Fusion_Cutter = new WeaponType(0);
 
-    public static WeaponType Gemini_Missiles;
+    public static final WeaponType Gemini_Missiles = new WeaponType(0);
 
-    public static WeaponType Gemini_Missiles_Tom_Kazansky;
+    public static final WeaponType Gemini_Missiles_Tom_Kazansky = new WeaponType(0);
 
-    public static WeaponType Burst_Lasers;
+    public static final WeaponType Burst_Lasers = new WeaponType(0);
 
-    public static WeaponType Burst_Lasers_Tom_Kazansky;
+    public static final WeaponType Burst_Lasers_Tom_Kazansky = new WeaponType(0);
 
-    public static WeaponType ATS_Laser_Battery;
+    public static final WeaponType ATS_Laser_Battery = new WeaponType(0);
 
-    public static WeaponType ATS_Laser_Battery_Hero;
+    public static final WeaponType ATS_Laser_Battery_Hero = new WeaponType(0);
 
-    public static WeaponType ATS_Laser_Battery_Hyperion;
+    public static final WeaponType ATS_Laser_Battery_Hyperion = new WeaponType(0);
 
-    public static WeaponType ATA_Laser_Battery;
+    public static final WeaponType ATA_Laser_Battery = new WeaponType(0);
 
-    public static WeaponType ATA_Laser_Battery_Hero;
+    public static final WeaponType ATA_Laser_Battery_Hero = new WeaponType(0);
 
-    public static WeaponType ATA_Laser_Battery_Hyperion;
+    public static final WeaponType ATA_Laser_Battery_Hyperion = new WeaponType(0);
 
-    public static WeaponType Flame_Thrower;
+    public static final WeaponType Flame_Thrower = new WeaponType(0);
 
-    public static WeaponType Flame_Thrower_Gui_Montag;
+    public static final WeaponType Flame_Thrower_Gui_Montag = new WeaponType(0);
 
-    public static WeaponType Arclite_Shock_Cannon;
+    public static final WeaponType Arclite_Shock_Cannon = new WeaponType(0);
 
-    public static WeaponType Arclite_Shock_Cannon_Edmund_Duke;
+    public static final WeaponType Arclite_Shock_Cannon_Edmund_Duke = new WeaponType(0);
 
-    public static WeaponType Longbolt_Missile;
+    public static final WeaponType Longbolt_Missile = new WeaponType(0);
 
-    public static WeaponType Claws;
+    public static final WeaponType Claws = new WeaponType(0);
 
-    public static WeaponType Claws_Devouring_One;
+    public static final WeaponType Claws_Devouring_One = new WeaponType(0);
 
-    public static WeaponType Claws_Infested_Kerrigan;
+    public static final WeaponType Claws_Infested_Kerrigan = new WeaponType(0);
 
-    public static WeaponType Needle_Spines;
+    public static final WeaponType Needle_Spines = new WeaponType(0);
 
-    public static WeaponType Needle_Spines_Hunter_Killer;
+    public static final WeaponType Needle_Spines_Hunter_Killer = new WeaponType(0);
 
-    public static WeaponType Kaiser_Blades;
+    public static final WeaponType Kaiser_Blades = new WeaponType(0);
 
-    public static WeaponType Kaiser_Blades_Torrasque;
+    public static final WeaponType Kaiser_Blades_Torrasque = new WeaponType(0);
 
-    public static WeaponType Toxic_Spores;
+    public static final WeaponType Toxic_Spores = new WeaponType(0);
 
-    public static WeaponType Spines;
+    public static final WeaponType Spines = new WeaponType(0);
 
-    public static WeaponType Acid_Spore;
+    public static final WeaponType Acid_Spore = new WeaponType(0);
 
-    public static WeaponType Acid_Spore_Kukulza;
+    public static final WeaponType Acid_Spore_Kukulza = new WeaponType(0);
 
-    public static WeaponType Glave_Wurm;
+    public static final WeaponType Glave_Wurm = new WeaponType(0);
 
-    public static WeaponType Glave_Wurm_Kukulza;
+    public static final WeaponType Glave_Wurm_Kukulza = new WeaponType(0);
 
-    public static WeaponType Seeker_Spores;
+    public static final WeaponType Seeker_Spores = new WeaponType(0);
 
-    public static WeaponType Subterranean_Tentacle;
+    public static final WeaponType Subterranean_Tentacle = new WeaponType(0);
 
-    public static WeaponType Suicide_Infested_Terran;
+    public static final WeaponType Suicide_Infested_Terran = new WeaponType(0);
 
-    public static WeaponType Suicide_Scourge;
+    public static final WeaponType Suicide_Scourge = new WeaponType(0);
 
-    public static WeaponType Particle_Beam;
+    public static final WeaponType Particle_Beam = new WeaponType(0);
 
-    public static WeaponType Psi_Blades;
+    public static final WeaponType Psi_Blades = new WeaponType(0);
 
-    public static WeaponType Psi_Blades_Fenix;
+    public static final WeaponType Psi_Blades_Fenix = new WeaponType(0);
 
-    public static WeaponType Phase_Disruptor;
+    public static final WeaponType Phase_Disruptor = new WeaponType(0);
 
-    public static WeaponType Phase_Disruptor_Fenix;
+    public static final WeaponType Phase_Disruptor_Fenix = new WeaponType(0);
 
-    public static WeaponType Psi_Assault;
+    public static final WeaponType Psi_Assault = new WeaponType(0);
 
-    public static WeaponType Psionic_Shockwave;
+    public static final WeaponType Psionic_Shockwave = new WeaponType(0);
 
-    public static WeaponType Psionic_Shockwave_TZ_Archon;
+    public static final WeaponType Psionic_Shockwave_TZ_Archon = new WeaponType(0);
 
-    public static WeaponType Dual_Photon_Blasters;
+    public static final WeaponType Dual_Photon_Blasters = new WeaponType(0);
 
-    public static WeaponType Dual_Photon_Blasters_Mojo;
+    public static final WeaponType Dual_Photon_Blasters_Mojo = new WeaponType(0);
 
-    public static WeaponType Dual_Photon_Blasters_Artanis;
+    public static final WeaponType Dual_Photon_Blasters_Artanis = new WeaponType(0);
 
-    public static WeaponType Anti_Matter_Missiles;
+    public static final WeaponType Anti_Matter_Missiles = new WeaponType(0);
 
-    public static WeaponType Anti_Matter_Missiles_Mojo;
+    public static final WeaponType Anti_Matter_Missiles_Mojo = new WeaponType(0);
 
-    public static WeaponType Anti_Matter_Missiles_Artanis;
+    public static final WeaponType Anti_Matter_Missiles_Artanis = new WeaponType(0);
 
-    public static WeaponType Phase_Disruptor_Cannon;
+    public static final WeaponType Phase_Disruptor_Cannon = new WeaponType(0);
 
-    public static WeaponType Phase_Disruptor_Cannon_Danimoth;
+    public static final WeaponType Phase_Disruptor_Cannon_Danimoth = new WeaponType(0);
 
-    public static WeaponType Pulse_Cannon;
+    public static final WeaponType Pulse_Cannon = new WeaponType(0);
 
-    public static WeaponType STS_Photon_Cannon;
+    public static final WeaponType STS_Photon_Cannon = new WeaponType(0);
 
-    public static WeaponType STA_Photon_Cannon;
+    public static final WeaponType STA_Photon_Cannon = new WeaponType(0);
 
-    public static WeaponType Scarab;
+    public static final WeaponType Scarab = new WeaponType(0);
 
-    public static WeaponType Neutron_Flare;
+    public static final WeaponType Neutron_Flare = new WeaponType(0);
 
-    public static WeaponType Halo_Rockets;
+    public static final WeaponType Halo_Rockets = new WeaponType(0);
 
-    public static WeaponType Corrosive_Acid;
+    public static final WeaponType Corrosive_Acid = new WeaponType(0);
 
-    public static WeaponType Subterranean_Spines;
+    public static final WeaponType Subterranean_Spines = new WeaponType(0);
 
-    public static WeaponType Warp_Blades;
+    public static final WeaponType Warp_Blades = new WeaponType(0);
 
-    public static WeaponType Warp_Blades_Hero;
+    public static final WeaponType Warp_Blades_Hero = new WeaponType(0);
 
-    public static WeaponType Warp_Blades_Zeratul;
+    public static final WeaponType Warp_Blades_Zeratul = new WeaponType(0);
 
-    public static WeaponType Independant_Laser_Battery;
+    public static final WeaponType Independant_Laser_Battery = new WeaponType(0);
 
-    public static WeaponType Twin_Autocannons_Floor_Trap;
+    public static final WeaponType Twin_Autocannons_Floor_Trap = new WeaponType(0);
 
-    public static WeaponType Hellfire_Missile_Pack_Wall_Trap;
+    public static final WeaponType Hellfire_Missile_Pack_Wall_Trap = new WeaponType(0);
 
-    public static WeaponType Flame_Thrower_Wall_Trap;
+    public static final WeaponType Flame_Thrower_Wall_Trap = new WeaponType(0);
 
-    public static WeaponType Hellfire_Missile_Pack_Floor_Trap;
+    public static final WeaponType Hellfire_Missile_Pack_Floor_Trap = new WeaponType(0);
 
-    public static WeaponType Yamato_Gun;
+    public static final WeaponType Yamato_Gun = new WeaponType(0);
 
-    public static WeaponType Nuclear_Strike;
+    public static final WeaponType Nuclear_Strike = new WeaponType(0);
 
-    public static WeaponType Lockdown;
+    public static final WeaponType Lockdown = new WeaponType(0);
 
-    public static WeaponType EMP_Shockwave;
+    public static final WeaponType EMP_Shockwave = new WeaponType(0);
 
-    public static WeaponType Irradiate;
+    public static final WeaponType Irradiate = new WeaponType(0);
 
-    public static WeaponType Parasite;
+    public static final WeaponType Parasite = new WeaponType(0);
 
-    public static WeaponType Spawn_Broodlings;
+    public static final WeaponType Spawn_Broodlings = new WeaponType(0);
 
-    public static WeaponType Ensnare;
+    public static final WeaponType Ensnare = new WeaponType(0);
 
-    public static WeaponType Dark_Swarm;
+    public static final WeaponType Dark_Swarm = new WeaponType(0);
 
-    public static WeaponType Plague;
+    public static final WeaponType Plague = new WeaponType(0);
 
-    public static WeaponType Consume;
+    public static final WeaponType Consume = new WeaponType(0);
 
-    public static WeaponType Stasis_Field;
+    public static final WeaponType Stasis_Field = new WeaponType(0);
 
-    public static WeaponType Psionic_Storm;
+    public static final WeaponType Psionic_Storm = new WeaponType(0);
 
-    public static WeaponType Disruption_Web;
+    public static final WeaponType Disruption_Web = new WeaponType(0);
 
-    public static WeaponType Restoration;
+    public static final WeaponType Restoration = new WeaponType(0);
 
-    public static WeaponType Mind_Control;
+    public static final WeaponType Mind_Control = new WeaponType(0);
 
-    public static WeaponType Feedback;
+    public static final WeaponType Feedback = new WeaponType(0);
 
-    public static WeaponType Optical_Flare;
+    public static final WeaponType Optical_Flare = new WeaponType(0);
 
-    public static WeaponType Maelstrom;
+    public static final WeaponType Maelstrom = new WeaponType(0);
 
-    public static WeaponType None;
+    public static final WeaponType None = new WeaponType(0);
 
-    public static WeaponType Unknown;
+    public static final WeaponType Unknown = new WeaponType(0);
 
 
     private static Map<Long, WeaponType> instances = new HashMap<Long, WeaponType>();

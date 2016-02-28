@@ -19,17 +19,17 @@ public class UnitSizeType {
         return toString_native(pointer);
     }
 
-    public static UnitSizeType Independent;
+    public static final UnitSizeType Independent = new UnitSizeType(0);
 
-    public static UnitSizeType Small;
+    public static final UnitSizeType Small = new UnitSizeType(0);
 
-    public static UnitSizeType Medium;
+    public static final UnitSizeType Medium = new UnitSizeType(0);
 
-    public static UnitSizeType Large;
+    public static final UnitSizeType Large = new UnitSizeType(0);
 
-    public static UnitSizeType None;
+    public static final UnitSizeType None = new UnitSizeType(0);
 
-    public static UnitSizeType Unknown;
+    public static final UnitSizeType Unknown = new UnitSizeType(0);
 
 
     private static Map<Long, UnitSizeType> instances = new HashMap<Long, UnitSizeType>();

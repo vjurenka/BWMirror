@@ -105,111 +105,111 @@ Returns the type of unit that is required for the upgrade. The player must have 
         return whatsRequired_native(pointer, level);
     }
 
-    public static UpgradeType Terran_Infantry_Armor;
+    public static final UpgradeType Terran_Infantry_Armor = new UpgradeType(0);
 
-    public static UpgradeType Terran_Vehicle_Plating;
+    public static final UpgradeType Terran_Vehicle_Plating = new UpgradeType(0);
 
-    public static UpgradeType Terran_Ship_Plating;
+    public static final UpgradeType Terran_Ship_Plating = new UpgradeType(0);
 
-    public static UpgradeType Zerg_Carapace;
+    public static final UpgradeType Terran_Infantry_Weapons = new UpgradeType(0);
 
-    public static UpgradeType Zerg_Flyer_Carapace;
+    public static final UpgradeType Terran_Vehicle_Weapons = new UpgradeType(0);
 
-    public static UpgradeType Protoss_Ground_Armor;
+    public static final UpgradeType Terran_Ship_Weapons = new UpgradeType(0);
 
-    public static UpgradeType Protoss_Air_Armor;
+    public static final UpgradeType U_238_Shells = new UpgradeType(0);
 
-    public static UpgradeType Terran_Infantry_Weapons;
+    public static final UpgradeType Ion_Thrusters = new UpgradeType(0);
 
-    public static UpgradeType Terran_Vehicle_Weapons;
+    public static final UpgradeType Titan_Reactor = new UpgradeType(0);
 
-    public static UpgradeType Terran_Ship_Weapons;
+    public static final UpgradeType Ocular_Implants = new UpgradeType(0);
 
-    public static UpgradeType Zerg_Melee_Attacks;
+    public static final UpgradeType Moebius_Reactor = new UpgradeType(0);
 
-    public static UpgradeType Zerg_Missile_Attacks;
+    public static final UpgradeType Apollo_Reactor = new UpgradeType(0);
 
-    public static UpgradeType Zerg_Flyer_Attacks;
+    public static final UpgradeType Colossus_Reactor = new UpgradeType(0);
 
-    public static UpgradeType Protoss_Ground_Weapons;
+    public static final UpgradeType Caduceus_Reactor = new UpgradeType(0);
 
-    public static UpgradeType Protoss_Air_Weapons;
+    public static final UpgradeType Charon_Boosters = new UpgradeType(0);
 
-    public static UpgradeType Protoss_Plasma_Shields;
+    public static final UpgradeType Zerg_Carapace = new UpgradeType(0);
 
-    public static UpgradeType U_238_Shells;
+    public static final UpgradeType Zerg_Flyer_Carapace = new UpgradeType(0);
 
-    public static UpgradeType Ion_Thrusters;
+    public static final UpgradeType Zerg_Melee_Attacks = new UpgradeType(0);
 
-    public static UpgradeType Titan_Reactor;
+    public static final UpgradeType Zerg_Missile_Attacks = new UpgradeType(0);
 
-    public static UpgradeType Ocular_Implants;
+    public static final UpgradeType Zerg_Flyer_Attacks = new UpgradeType(0);
 
-    public static UpgradeType Moebius_Reactor;
+    public static final UpgradeType Ventral_Sacs = new UpgradeType(0);
 
-    public static UpgradeType Apollo_Reactor;
+    public static final UpgradeType Antennae = new UpgradeType(0);
 
-    public static UpgradeType Colossus_Reactor;
+    public static final UpgradeType Pneumatized_Carapace = new UpgradeType(0);
 
-    public static UpgradeType Ventral_Sacs;
+    public static final UpgradeType Metabolic_Boost = new UpgradeType(0);
 
-    public static UpgradeType Antennae;
+    public static final UpgradeType Adrenal_Glands = new UpgradeType(0);
 
-    public static UpgradeType Pneumatized_Carapace;
+    public static final UpgradeType Muscular_Augments = new UpgradeType(0);
 
-    public static UpgradeType Metabolic_Boost;
+    public static final UpgradeType Grooved_Spines = new UpgradeType(0);
 
-    public static UpgradeType Adrenal_Glands;
+    public static final UpgradeType Gamete_Meiosis = new UpgradeType(0);
 
-    public static UpgradeType Muscular_Augments;
+    public static final UpgradeType Metasynaptic_Node = new UpgradeType(0);
 
-    public static UpgradeType Grooved_Spines;
+    public static final UpgradeType Chitinous_Plating = new UpgradeType(0);
 
-    public static UpgradeType Gamete_Meiosis;
+    public static final UpgradeType Anabolic_Synthesis = new UpgradeType(0);
 
-    public static UpgradeType Metasynaptic_Node;
+    public static final UpgradeType Protoss_Ground_Armor = new UpgradeType(0);
 
-    public static UpgradeType Singularity_Charge;
+    public static final UpgradeType Protoss_Air_Armor = new UpgradeType(0);
 
-    public static UpgradeType Leg_Enhancements;
+    public static final UpgradeType Protoss_Ground_Weapons = new UpgradeType(0);
 
-    public static UpgradeType Scarab_Damage;
+    public static final UpgradeType Protoss_Air_Weapons = new UpgradeType(0);
 
-    public static UpgradeType Reaver_Capacity;
+    public static final UpgradeType Protoss_Plasma_Shields = new UpgradeType(0);
 
-    public static UpgradeType Gravitic_Drive;
+    public static final UpgradeType Singularity_Charge = new UpgradeType(0);
 
-    public static UpgradeType Sensor_Array;
+    public static final UpgradeType Leg_Enhancements = new UpgradeType(0);
 
-    public static UpgradeType Gravitic_Boosters;
+    public static final UpgradeType Scarab_Damage = new UpgradeType(0);
 
-    public static UpgradeType Khaydarin_Amulet;
+    public static final UpgradeType Reaver_Capacity = new UpgradeType(0);
 
-    public static UpgradeType Apial_Sensors;
+    public static final UpgradeType Gravitic_Drive = new UpgradeType(0);
 
-    public static UpgradeType Gravitic_Thrusters;
+    public static final UpgradeType Sensor_Array = new UpgradeType(0);
 
-    public static UpgradeType Carrier_Capacity;
+    public static final UpgradeType Gravitic_Boosters = new UpgradeType(0);
 
-    public static UpgradeType Khaydarin_Core;
+    public static final UpgradeType Khaydarin_Amulet = new UpgradeType(0);
 
-    public static UpgradeType Argus_Jewel;
+    public static final UpgradeType Apial_Sensors = new UpgradeType(0);
 
-    public static UpgradeType Argus_Talisman;
+    public static final UpgradeType Gravitic_Thrusters = new UpgradeType(0);
 
-    public static UpgradeType Caduceus_Reactor;
+    public static final UpgradeType Carrier_Capacity = new UpgradeType(0);
 
-    public static UpgradeType Chitinous_Plating;
+    public static final UpgradeType Khaydarin_Core = new UpgradeType(0);
 
-    public static UpgradeType Anabolic_Synthesis;
+    public static final UpgradeType Argus_Jewel = new UpgradeType(0);
 
-    public static UpgradeType Charon_Boosters;
+    public static final UpgradeType Argus_Talisman = new UpgradeType(0);
 
-    public static UpgradeType Upgrade_60;
+    public static final UpgradeType Upgrade_60 = new UpgradeType(0);
 
-    public static UpgradeType None;
+    public static final UpgradeType None = new UpgradeType(0);
 
-    public static UpgradeType Unknown;
+    public static final UpgradeType Unknown = new UpgradeType(0);
 
 
     private static Map<Long, UpgradeType> instances = new HashMap<Long, UpgradeType>();

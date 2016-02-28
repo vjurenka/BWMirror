@@ -54,17 +54,17 @@ Retrieves the default supply provider UnitType for this race that is used to con
         return getSupplyProvider_native(pointer);
     }
 
-    public static Race Zerg;
+    public static final Race Zerg = new Race(0);
 
-    public static Race Terran;
+    public static final Race Terran = new Race(0);
 
-    public static Race Protoss;
+    public static final Race Protoss = new Race(0);
 
-    public static Race Random;
+    public static final Race Random = new Race(0);
 
-    public static Race None;
+    public static final Race None = new Race(0);
 
-    public static Race Unknown;
+    public static final Race Unknown = new Race(0);
 
 
     private static Map<Long, Race> instances = new HashMap<Long, Race>();
