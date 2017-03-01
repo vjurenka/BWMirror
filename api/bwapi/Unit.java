@@ -1,12 +1,8 @@
 package bwapi;
 
-import bwapi.*;
-
-import java.util.Map;
 import java.util.HashMap;
-import java.util.Collection;
 import java.util.List;
-import bwapi.PositionedObject;
+import java.util.Map;
 
 /**
 The Unit class is used to get information about individual units as well as issue orders to units. Each unit in the game has a unique Unit object, and Unit objects are not deleted until the end of the match (so you don't need to worry about unit pointers becoming invalid). Every Unit in the game is either accessible or inaccessible. To determine if an AI can access a particular unit, BWAPI checks to see if Flag::CompleteMapInformation is enabled. So there are two cases to consider - either the flag is enabled, or it is disabled: If Flag::CompleteMapInformation is disabled, then a unit is accessible if and only if it is visible. Note Some properties of visible enemy units will not be made available to the AI (such as the contents of visible enemy dropships). If a unit is not visible, UnitInterface::exists will return false, regardless of whether or not the unit exists. This is because absolutely no state information on invisible enemy units is made available to the AI. To determine if an enemy unit has been destroyed, the AI must watch for AIModule::onUnitDestroy messages from BWAPI, which is only called for visible units which get destroyed. If Flag::CompleteMapInformation is enabled, then all units that exist in the game are accessible, and UnitInterface::exists is accurate for all units. Similarly AIModule::onUnitDestroy messages are generated for all units that get destroyed, not just visible ones. If a Unit is not accessible, then only the getInitial__ functions will be available to the AI. However for units that were owned by the player, getPlayer and getType will continue to work for units that have been destroyed.
@@ -2923,6 +2919,21 @@ Cheap checks for whether the unit is able to execute a placeCOP command. See als
         return canPlaceCOP_native(pointer, target, checkCanIssueCommandType, checkCommandibility);
     }
 
+    @Override
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof Unit)) {
+            return false;
+        }
+        return getID() == ((Unit) other).getID();
+    }
+
+    @Override
+    public int hashCode() {
+        return getID();
+    }
 
     private static Map<Long, Unit> instances = new HashMap<Long, Unit>();
 

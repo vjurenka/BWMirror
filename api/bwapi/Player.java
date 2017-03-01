@@ -1,11 +1,8 @@
 package bwapi;
 
-import bwapi.*;
-
-import java.util.Map;
 import java.util.HashMap;
-import java.util.Collection;
 import java.util.List;
+import java.util.Map;
 
 /**
 The Player represents a unique controller in the game. Each player in a match will have his or her own player instance. There is also a neutral player which owns all the neutral units (such as mineral patches and vespene geysers). See also Playerset, PlayerType, Race
@@ -426,6 +423,21 @@ Verifies that this player satisfies a unit type requirement. This verifies compl
         return hasUnitTypeRequirement_native(pointer, unit, amount);
     }
 
+    @Override
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof Player)) {
+            return false;
+        }
+        return getID() == ((Player) other).getID();
+    }
+
+    @Override
+    public int hashCode() {
+        return getID();
+    }
 
     private static Map<Long, Player> instances = new HashMap<Long, Player>();
 
