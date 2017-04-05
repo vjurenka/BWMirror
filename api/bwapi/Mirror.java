@@ -74,14 +74,20 @@ public class Mirror {
                 String path = Mirror.class.getProtectionDomain().getCodeSource().getLocation().getPath();
                 String decodedPath = java.net.URLDecoder.decode(path, "UTF-8");
 
+                JarResources jar = null;
                 for (String dllName : dllNames) {
                     String dllNameExt = dllName + ".dll";
                     if (!new File(dllNameExt).exists()) {
-                        JarResources jar = new JarResources(path);
+                        if (null == jar) {
+                            jar = new JarResources(decodedPath);
+                        }
                         byte[] correctDllData = jar.getResource(dllNameExt);
-                        FileOutputStream funnyStream = new FileOutputStream(dllNameExt);
-                        funnyStream.write(correctDllData);
-                        funnyStream.close();
+                        // prevents the creation of zero byte files
+                        if (null != correctDllData) {
+                            FileOutputStream funnyStream = new FileOutputStream(dllNameExt);
+                            funnyStream.write(correctDllData);
+                            funnyStream.close();
+                        }
                     }
                 }
             }
