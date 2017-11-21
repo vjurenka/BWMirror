@@ -56,12 +56,12 @@ public class Mirror {
 
     private static final boolean EXTRACT_JAR = true;
 
-    private static final String VERSION = "2_5";
+    private static final String VERSION = "2_6";
 
     static {
         String arch = System.getProperty("os.arch");
         String dllNames[] = {"bwapi_bridge" + VERSION, "libgmp-10", "libmpfr-4"};
-        if(!arch.equals("x86")){
+        if(!arch.equals("x86") && !arch.equals("i386")){
             throw new UnsupportedOperationException("BWMirror API supports only x86 architecture.");
         }
         try {
@@ -74,14 +74,20 @@ public class Mirror {
                 String path = Mirror.class.getProtectionDomain().getCodeSource().getLocation().getPath();
                 String decodedPath = java.net.URLDecoder.decode(path, "UTF-8");
 
+                JarResources jar = null;
                 for (String dllName : dllNames) {
                     String dllNameExt = dllName + ".dll";
                     if (!new File(dllNameExt).exists()) {
-                        JarResources jar = new JarResources(path);
+                        if (null == jar) {
+                            jar = new JarResources(decodedPath);
+                        }
                         byte[] correctDllData = jar.getResource(dllNameExt);
-                        FileOutputStream funnyStream = new FileOutputStream(dllNameExt);
-                        funnyStream.write(correctDllData);
-                        funnyStream.close();
+                        // prevents the creation of zero byte files
+                        if (null != correctDllData) {
+                            FileOutputStream funnyStream = new FileOutputStream(dllNameExt);
+                            funnyStream.write(correctDllData);
+                            funnyStream.close();
+                        }
                     }
                 }
             }
