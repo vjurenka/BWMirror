@@ -1,4 +1,4 @@
-﻿#BWMirror API - An API for SC:Broodwar AIs
+# BWMirror API - An API for SC:Broodwar AIs
 BWMirror API allows you to treat native BWAPI C/C++ objects as if they were Java objects. Current supported version is BWAPI4 which is located at https://github.com/bwapi/bwapi . 
 
 - Current BwMirror version: 2.6
@@ -8,11 +8,11 @@ This project contains the API and documentation for BWMirror. If you're interest
 **All you need to do download is the current version .jar file, which is in the dist folder**  ,
 the .dll will be auto extracted. The zip archive listed in releases also includes BWTA2 map data for SSCAI Tournament.
 
-##Requirements
+## Requirements
 - BWAPI, version BWAPI v 4.1.2 - https://github.com/bwapi/bwapi/releases
 - 32bit JRE
 
-##FAQ 
+## FAQ 
 **How do I start creating awesome bots?**
 
 Use the tutorial at SSCAI Tournament http://www.sscaitournament.com/index.php?action=tutorial or the one by 
@@ -52,7 +52,8 @@ You can do it either here or in the generator project. If your bot crashed with 
 
 The first time BWTA analyses a map, it can take a few minutes. The results are saved to bwapi-data/BWTA/ folder for later use. We have prepared BWTA data for some maps (the map pool from SSCAITournament).
 
-##Changelog
+## Changelog
+
 **v 2.6**
 - Added support for i386 architecture
 - Added equals() and hashCode() functions to most objects
