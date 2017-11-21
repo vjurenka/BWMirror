@@ -1,17 +1,12 @@
 package bwta;
 
-import bwta.*;
-
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Collection;
-import java.util.List;
 import bwapi.Position;
-import bwapi.TilePosition;
-import bwapi.Player;
-import bwapi.Unit;
-import bwapi.Pair;
 import bwapi.PositionedObject;
+import bwapi.TilePosition;
+import bwapi.Unit;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class BaseLocation extends PositionedObject 
 {
@@ -68,6 +63,22 @@ public class BaseLocation extends PositionedObject
         return isStartLocation_native(pointer);
     }
 
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof BaseLocation)) {
+            return false;
+        }
+        if (!super.equals(other)) {
+            return false;
+        }
+        return getPosition().equals(((BaseLocation) other).getPosition());
+    }
+
+    public int hashCode() {
+        return getPosition().hashCode();
+    }
 
     private static Map<Long, BaseLocation> instances = new HashMap<Long, BaseLocation>();
 

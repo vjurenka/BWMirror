@@ -1,11 +1,8 @@
 package bwapi;
 
-import bwapi.*;
-
-import java.util.Map;
 import java.util.HashMap;
-import java.util.Collection;
 import java.util.List;
+import java.util.Map;
 
 public class Player {
 
@@ -261,6 +258,21 @@ public class Player {
         return hasUnitTypeRequirement_native(pointer, unit, amount);
     }
 
+    @Override
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof Player)) {
+            return false;
+        }
+        return getID() == ((Player) other).getID();
+    }
+
+    @Override
+    public int hashCode() {
+        return getID();
+    }
 
     private static Map<Long, Player> instances = new HashMap<Long, Player>();
 

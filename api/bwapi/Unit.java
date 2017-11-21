@@ -1,12 +1,8 @@
 package bwapi;
 
-import bwapi.*;
-
-import java.util.Map;
 import java.util.HashMap;
-import java.util.Collection;
 import java.util.List;
-import bwapi.PositionedObject;
+import java.util.Map;
 
 public class Unit extends PositionedObject 
 {
@@ -2119,6 +2115,21 @@ public class Unit extends PositionedObject
         return canPlaceCOP_native(pointer, target, checkCanIssueCommandType, checkCommandibility);
     }
 
+    @Override
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof Unit)) {
+            return false;
+        }
+        return getID() == ((Unit) other).getID();
+    }
+
+    @Override
+    public int hashCode() {
+        return getID();
+    }
 
     private static Map<Long, Unit> instances = new HashMap<Long, Unit>();
 
